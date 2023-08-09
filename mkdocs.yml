@@ -1,3 +1,14 @@
 site_name: My Docs
 theme:
   name: material
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Plugins
+  plugins:
+    - search:
+        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+        minify_html: true
