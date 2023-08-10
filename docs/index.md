@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Material for MkDocs
+title: hyperter96
 ---
 
 Welcome to Material for MkDocs.

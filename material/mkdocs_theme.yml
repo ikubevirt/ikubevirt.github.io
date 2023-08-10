@@ -19,7 +19,7 @@
 # IN THE SOFTWARE.
 
 # Language for theme localization
-language: en
+language: zh
 
 # Text direction (can be ltr or rtl), default: ltr
 direction:
@@ -43,7 +43,7 @@ font:
 icon:
 
 # Favicon to be rendered
-favicon: assets/images/favicon.png
+favicon: assets/images/favicon.ico
 
 # Static pages to build
 static_templates:

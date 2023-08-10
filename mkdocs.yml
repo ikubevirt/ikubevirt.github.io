@@ -8,10 +8,13 @@ repo_name: hyperter96/cloud-native-docs
 repo_url: https://github.com/hyperter96/cloud-native-docs
 
 # Copyright
-copyright: Copyright &copy; 2021 - 2023 Peter Liao
+copyright: Copyright &copy; 2023 - 2023 Peter Liao
 
 theme:
   name: material
+  logo: assets/images/selfie-modified.png
+  favicon: assets/images/hyperContainer.png
+  language: zh
   icon:
     repo: fontawesome/brands/git-alt
   custom_dir: material/.overrides
@@ -61,7 +64,11 @@ theme:
 # Plugins
 plugins:
   - search:
+      jieba_dict: dict.txt
       separator: '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - en
+        - zh
   - minify:
       minify_html: true
 
