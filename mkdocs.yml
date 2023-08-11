@@ -49,13 +49,13 @@ theme:
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch
         name: Switch to light mode
   font:
     text: Roboto
@@ -72,6 +72,8 @@ plugins:
   - minify:
       minify_html: true
 
+extra_css:
+  - assets/stylesheets/extra.css
 
 # Extensions
 markdown_extensions:

@@ -15,7 +15,7 @@
 
 - `virt-api` ：`kubeVirt`是以CRD形式去管理VM Pod，`virt-api`就是所有虚拟化操作的入口，这里面包括常规的CDR更新验证、以及`console、vm start、stop`等操作。
 - `virt-controller` ：`virt-controller`会根据`vmi CRD`，生成对应的`virt-launcher Pod`，并且维护CRD的状态。与kubernetes api-server通讯监控VMI资源的创建删除等状态。
-- `virt-handler` ：`virt-handler`会以`deamonset`形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。`virt-handler`还会保持集群级别`VMI Spec`与相应`libvirt`域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足`VMI Spec`定义的网络和存储要求。
+- `virt-handler` ：`virt-handler`会以`daemonset`形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。`virt-handler`还会保持集群级别`VMI Spec`与相应`libvirt`域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足`VMI Spec`定义的网络和存储要求。
 - `virt-launcher` ：每个`virt-launcher pod`对应着一个`VMI`，kubelet只负责`virt-launcher pod`运行状态，不会去关心`VMI`创建情况。`virt-handler`会根据CRD参数配置去通知`virt-launcher`去使用本地的`libvirtd`实例来启动`VMI`，随着`Pod`的生命周期结束，`virt-lanuncher`也会去通知`VMI`去执行终止操作；其次在每个`virt-launcher pod`中还对应着一个`libvirtd`，`virt-launcher`通过`libvirtd`去管理VM的生命周期，这样做到去中心化，不再是以前的虚拟机那套做法，一个`libvirtd`去管理多个VM。
 - `virtctl` ：`virtctl`是`kubeVirt`自带类似`kubectl`的命令行工具，它是越过`virt-launcher pod`这一层去直接管理VM虚拟机，可以控制VM的`start、stop、restart`。
 
