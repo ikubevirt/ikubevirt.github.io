@@ -1,5 +1,3 @@
 :root > * {
-  --md-code-hl-generic-color: #0FF1CE;
-  --md-code-hl-comment-color: #0FF1CE;
-  --md-code-fg-color: #0FF1CE;
+  --md-code-fg-color: hsla(195, 50%, 56%, 1);
 }
