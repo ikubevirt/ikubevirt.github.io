@@ -63,6 +63,7 @@ theme:
 
 # Plugins
 plugins:
+  - glightbox
   - search:
       jieba_dict: dict.txt
       separator: '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

@@ -22,5 +22,6 @@ jobs:
             mkdocs-material-
       - run: pip install "mkdocs-material>=9.1.21" \
               "mkdocs-minify-plugin>=0.7.1" \
-              "jieba>=0.42.1"
+              "jieba>=0.42.1" \
+              "mkdocs-glightbox>=0.3.4"
       - run: mkdocs gh-deploy --force
