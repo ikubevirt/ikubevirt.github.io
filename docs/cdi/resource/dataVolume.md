@@ -177,7 +177,7 @@ subjects:
 
 如果BODY用资源清单yaml，BODY信息如下：
 
-```yaml linenums="1"
+```yaml linenums="1" title="upload-datavolume-token.yaml"
 apiVersion: upload.cdi.kubevirt.io/v1beta1
 kind: UploadTokenRequest
 metadata:
@@ -204,6 +204,11 @@ spec:
 status:
   token: eyJhbGciOiJQUzUxMiIsImtpZCI6IiJ9.eyJwdmNOYW1lIjoidXBsb2FkLXRlc3QiLCJuYW1lc3BhY2UiOiJkZWZhdWx0IiwiY3JlYXRpb25UaW1lc3RhbXAiOiIyMDE4LTA5LTIxVDE4OjEyOjE5LjQwODI1MDQ4NFoifQ.JWk1VyvzSse3eFiBROKgGoLnOPCiYW9JdDWKXFROEL6XY0O5lFb1R0rwdfWwC3BBOtEA9mC9x3ZGYPnYWO-5G_r1fWKHjF-zifrCX_3Dhp3vfSq6Zfpu-vV0Qn0A3YkSCCmiC_nONAhVjEDuQsRFIKwYcxBoEOpye92ggH2u5FxQE7FwxxH6-RHun9tc_lIFX-ZFKnq7n5tWbjsTmAZI_4rDNgYkVFhFtENU6e-5_Ncokxs3YVzkbSrXweZpRmmaYQOmZhjXSLjKED_2FVq7tYeVueEEhKC_zJ-AEivstALPwPjiwyWXJyfE3dCmbA1sBKuNUrAaDlBvSAp1uPV9eQ
 
+```
+
+可以通过执行以下命令直接获取`UPLOADTOKEN`，
+```bash
+UPLOADTOKEN=$(kubectl apply -f upload-datavolume-token.yaml -o="jsonpath={.status.token}")
 ```
 
 通过`curl`上传数据到`datavolume`，
