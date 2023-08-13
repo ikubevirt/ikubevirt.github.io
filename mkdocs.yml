@@ -1,19 +1,19 @@
 # Project information
 site_name: 云原生虚拟化充电站
-site_url: http://ikubevirt.cn/
+site_url: https://ikubevirt.github.io/
 site_author: Peter Liao
 site_description: 本文档主要用于学习和记录云原生虚拟化的相关知识
 # Repository
-repo_name: hyperter96/cloud-native-docs
-repo_url: https://github.com/hyperter96/cloud-native-docs
+repo_name: ikubevirt/ikubevirt.github.io
+repo_url: https://github.com/ikubevirt/ikubevirt.github.io
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2023 Peter Liao
 
 theme:
   name: material
-  logo: assets/images/selfie-modified.png
-  favicon: assets/images/hyperContainer.png
+  logo: assets/images/kubeVirt-logo.png
+  favicon: assets/images/kubeVirt-logo.png
   language: zh
   icon:
     repo: fontawesome/brands/git-alt
