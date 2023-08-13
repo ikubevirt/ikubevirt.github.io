@@ -13,7 +13,7 @@ Containerized-Data-Importer (CDI) 是 Kubernetes 的持久存储管理插件。
 
 下面一张图我们可以了解CDI能够做什么：
 
-![](https://cdn.jsdelivr.net/gh/ikubevirt/ikubevirt.github.io/docs/assets/images/what-cdi-do.png){ loading=lazy }
+![](https://cdn.jsdelivr.net/gh/ikubevirt/ikubevirt.github.io/docs/assets/images/what-cdi-do2.png){ loading=lazy }
 
 我们把CDI当成一个黑盒，站在使用者的角度来观察它。用户可以通过两种方式使用CDI，分别是：
 

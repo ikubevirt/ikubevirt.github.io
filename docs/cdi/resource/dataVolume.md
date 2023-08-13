@@ -99,10 +99,7 @@ spec:
 
 创建Upload Token，集群创建以下ServiceAccount，并绑定相关权限
 
-[//]: # (/// settings | cdi-uploadtokenrequests-sa.yaml)
 
-[//]: # ()
-[//]: # (//// collapse-code)
 ```yaml linenums="1"
 apiVersion: v1
 kind: ServiceAccount
@@ -178,10 +175,6 @@ subjects:
   }
 }
 ```
-
-[//]: # (////)
-
-[//]: # (///)
 
 如果BODY用资源清单yaml，BODY信息如下：
 

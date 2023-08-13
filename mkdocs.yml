@@ -134,6 +134,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.details
 
 # Page tree
 nav:
