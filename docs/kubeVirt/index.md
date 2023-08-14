@@ -33,6 +33,10 @@
 
 ### 资源列表
 
+kubeVirt资源分为以下几大类。
+
+#### 虚拟机实例
+
 <div class="grid cards" markdown>
 
 -  __[VirtualMachine]__ – 深入了解资源`virtualMachine`
@@ -42,6 +46,16 @@
 
   [VirtualMachine]: resource/virtualMachine.md
   [VirtualMachineInstance]: resource/virtualMachineInstance.md
+
+#### 虚拟机迁移
+
+<div class="grid cards" markdown>
+
+-  __[VirtualMachineInstanceMigration]__ – 深入了解资源`virtualMachineInstanceMigration`
+
+</div>
+
+  [VirtualMachineInstanceMigration]: resource/virtualMachineInstanceMigration.md
 
 ### 源码分析
 
@@ -53,6 +67,6 @@
 
 </div>
 
-  [virt-controller]: sourceCodeAnalysis/virt-controller.md
+  [virt-controller]: sourceCodeAnalysis/virt-controller/virt-controller-start.md
   [virt-launcher]: sourceCodeAnalysis/virt-launcher.md
   [virt-handler]: sourceCodeAnalysis/virt-handler.md

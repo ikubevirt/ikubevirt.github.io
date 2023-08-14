@@ -147,17 +147,23 @@ nav:
           - 架构与生命周期管理: kubeVirt/kubeVirt/quick-learn.md
           - 实战演练: kubeVirt/kubeVirt/quick-deploy.md
       - 资源列表:
-          - VirtualMachine: kubeVirt/resource/virtualMachine.md
-          - VirtualMachineInstance: kubeVirt/resource/virtualMachineInstance.md
+          - 虚拟机实例:
+              - VM资源: kubeVirt/resource/virtualMachine.md
+              - VMI资源: kubeVirt/resource/virtualMachineInstance.md
+          - 虚拟机迁移:
+              - VMIMigration资源: kubeVirt/resource/virtualMachineInstanceMigration.md
       - 源码分析:
-          - virt-controller: kubeVirt/sourceCodeAnalysis/virt-controller.md
+          - virt-controller:
+              - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md
+              - vmController: kubeVirt/sourceCodeAnalysis/virt-controller/vm-controller.md
+              - vmiController: kubeVirt/sourceCodeAnalysis/virt-controller/vmi-controller.md
           - virt-launcher: kubeVirt/sourceCodeAnalysis/virt-launcher.md
           - virt-handler: kubeVirt/sourceCodeAnalysis/virt-handler.md
   - CDI:
       - cdi/index.md
       - 资源列表:
-          - DataVolume: cdi/resource/dataVolume.md
-          - DataImportCron: cdi/resource/dataImportCron.md
+          - DataVolume资源: cdi/resource/dataVolume.md
+          - DataImportCron资源: cdi/resource/dataImportCron.md
   - GPU:
       - gpu/index.md
   - 网络:
