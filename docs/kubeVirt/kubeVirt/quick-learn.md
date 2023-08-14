@@ -33,31 +33,12 @@ kubeVirt以CRD的形式将VM管理接口接入到kubernetes中，通过一个pod
 
 Hypervisor（VMM）虚拟机监视器有以下分类：
 
-1. Type-1，native or bare-metal hypervisors ：硬件虚拟化
-
-    这些Hypervisor是直接安装并运行在宿主机上的硬件之上的，Hypervisor运行在硬件之上来控制和管理硬件资源。 比如：
-
-    - `Microsoft Hyper-V`
-    - `VMware ESXI`
-    - `KVM`
-
-2. Typer-2 or hosted hypervisors ：
-
-    这些Hypervisor直接作为一种计算机程序运行在宿主机上的操作系统之上的。
-
-    - `QEMU`
-    - `VirtualBox`
-    - `VMware Player`
-    - `VMware WorkStation`
-
-3. 虚拟化主要就是虚拟`CPU`，`MEM`（内存），`I/Odevices`
-
-    - 其中`Intel VT-x/AMD-X`实现的是`CPU`虚拟化
-    - `Intel EPT/AMD-NPT`实现`MEM`的虚拟化
-
-4. `Qemu-Kvm`的结合：
-
-    `KVM`只能进行`CPU`，`MEM`，的虚拟化，`QEMU`能进行硬件，比如：声卡，USE接口，...的虚拟化，因此通常将`QEMU`，`KVM`结合共同虚拟：`QEMU-KVM`。
+|                虚拟机监视器类别                 | 描述                                                                                                                      |
+|:---------------------------------------:|:------------------------------------------------------------------------------------------------------------------------|
+|        Type I hypervisor: 硬件虚拟化         | 这些Hypervisor是直接安装并运行在宿主机上的硬件之上的，Hypervisor运行在硬件之上来控制和管理硬件资源。 比如：<li> `Microsoft Hyper-V` <li> `VMware ESXI` <li>  `KVM` |
+| Typer-II hypervisor: hosted hypervisors | 这些Hypervisor直接作为一种计算机程序运行在宿主机上的操作系统之上的。 比如：<li> `QEMU` <li> `VirtualBox` <li> `VMware Player` <li> `VMware WorkStation` |
+|     虚拟`CPU`，`MEM`（内存），`I/Odevices`      | <li> 其中`Intel VT-x/AMD-X`实现的是`CPU`虚拟化 <li> `Intel EPT/AMD-NPT`实现`MEM`的虚拟化                                               |
+|             `Qemu-Kvm`的结合               | `KVM`只能进行`CPU`，`MEM`的虚拟化，`QEMU`能进行硬件，比如：声卡，USE接口，...的虚拟化，因此通常将`QEMU`，`KVM`结合共同虚拟：`QEMU-KVM`。                            |
 
 我们通过`libvirt`命令行工具，来调动Hypervisor，从而使Hypervisor管理虚拟机。
 

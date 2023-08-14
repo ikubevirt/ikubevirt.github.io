@@ -2,7 +2,9 @@
 
 ## 什么是CDI
 
-Containerized-Data-Importer (CDI) 是 Kubernetes 的持久存储管理插件。
+!!! info "CDI定义"
+
+    Containerized-Data-Importer (CDI) 是 Kubernetes 的持久存储管理插件。
 
 它的主要目标是在PVC的基础上构建 Kubevirt VM 的虚拟机磁盘资源，并提供一种将不同数据源的数据填充到指定PVC的能力。让用户能够：
 
@@ -44,3 +46,13 @@ CDI始终做以下事情：
 
   [DataVolume]: resource/dataVolume.md
   [DataImportCron]: resource/dataImportCron.md
+
+### 特性功能
+
+<div class="grid cards" markdown>
+
+-  __[热插拔卷]__ – 深入了解特性热插拔卷
+
+</div>
+
+  [热插拔卷]: features/hotplug-volume.md

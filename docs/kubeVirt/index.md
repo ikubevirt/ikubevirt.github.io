@@ -41,11 +41,13 @@ kubeVirt资源分为以下几大类。
 
 -  __[VirtualMachine]__ – 深入了解资源`virtualMachine`
 -  __[VirtualMachineInstance]__ – 深入了解资源`virtualMachineInstance`
+-  __[VirtualMachineInstanceReplicaSet]__ – 深入了解资源`virtualMachineInstanceReplicaSet`
 
 </div>
 
   [VirtualMachine]: resource/virtualMachine.md
   [VirtualMachineInstance]: resource/virtualMachineInstance.md
+  [VirtualMachineInstanceReplicaSet]: resource/virtualMachineInstanceReplicaSet.md
 
 #### 虚拟机迁移
 
@@ -66,6 +68,16 @@ kubeVirt资源分为以下几大类。
 </div>
 
   [VirtualMachineSnapshot]: resource/virtualMachineSnapshot.md
+
+### 特性功能
+
+<div class="grid cards" markdown>
+
+-  __[内核同页合并]__ – 深入了解特性内核同页合并
+
+</div>
+
+  [内核同页合并]: features/ksm.md
 
 ### 源码分析
 

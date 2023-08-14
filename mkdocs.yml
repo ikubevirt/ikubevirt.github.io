@@ -150,10 +150,13 @@ nav:
           - 虚拟机实例:
               - vm资源: kubeVirt/resource/virtualMachine.md
               - vmi资源: kubeVirt/resource/virtualMachineInstance.md
+              - vmirs资源: kubeVirt/resource/virtualMachineInstanceReplicaSet.md
           - 虚拟机迁移:
               - vmiMigration资源: kubeVirt/resource/virtualMachineInstanceMigration.md
           - 虚拟机快照:
               - vmSnapshot资源: kubeVirt/resource/virtualMachineSnapshot.md
+      - 特性功能:
+          - 内核同页合并: kubeVirt/features/ksm.md
       - 源码分析:
           - virt-controller:
               - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md
@@ -166,6 +169,8 @@ nav:
       - 资源列表:
           - DataVolume资源: cdi/resource/dataVolume.md
           - DataImportCron资源: cdi/resource/dataImportCron.md
+      - 特性功能:
+          - 热插拔卷: cdi/features/hotplug-volume.md
   - GPU:
       - gpu/index.md
   - 网络:
