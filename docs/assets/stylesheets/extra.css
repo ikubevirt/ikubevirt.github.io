@@ -1,3 +1,13 @@
 :root > * {
   --md-code-fg-color: hsla(195, 50%, 56%, 1);
 }
+
+.md-typeset {
+    font-size: 0.7rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}

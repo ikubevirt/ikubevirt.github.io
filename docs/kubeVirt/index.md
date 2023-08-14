@@ -57,6 +57,16 @@ kubeVirt资源分为以下几大类。
 
   [VirtualMachineInstanceMigration]: resource/virtualMachineInstanceMigration.md
 
+#### 虚拟机快照
+
+<div class="grid cards" markdown>
+
+-  __[VirtualMachineSnapshot]__ – 深入了解资源`virtualMachineSnapshot`
+
+</div>
+
+  [VirtualMachineSnapshot]: resource/virtualMachineSnapshot.md
+
 ### 源码分析
 
 <div class="grid cards" markdown>

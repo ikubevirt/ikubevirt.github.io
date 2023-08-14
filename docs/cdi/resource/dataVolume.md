@@ -141,76 +141,75 @@ subjects:
 
     有两种方式上传，一种是`json`做BODY, 另一种是用资源清单`yaml`文件发POST请求。
 
-如果BODY信息用json，该BODY信息如下：
+=== "json"
 
-```json linenums="1"
-{
-  "apiVersion": "upload.cdi.kubevirt.io/v1beta1",
-  "kind": "UploadTokenRequest",
-  "metadata": {
-    "name": "DV名称",
-    "namespace": "default",
-    "spec": {
-      "pvcName": "DV名称"
+    ```json linenums="1" title="upload-datavolume-token.json"
+    {
+      "apiVersion": "upload.cdi.kubevirt.io/v1beta1",
+      "kind": "UploadTokenRequest",
+      "metadata": {
+        "name": "DV名称",
+        "namespace": "default",
+        "spec": {
+          "pvcName": "DV名称"
+        }
+      }
     }
-  }
-}
-```
+    ```
+    
+    返回信息
+    ```json linenums="1"
+    {
+      "kind": "UploadTokenRequest",
+      "apiVersion": "upload.cdi.kubevirt.io/v1beta1",
+      "metadata": {
+        "name": "upload-datavolume",
+        "namespace": "default",
+        "creationTimestamp": null
+      },
+      "spec": {
+        "pvcName": ""
+      },
+      "status": {
+        "token": "UPLOADTOKEN"
+      }
+    }
+    ```
 
-返回信息
-```json linenums="1"
-{
-  "kind": "UploadTokenRequest",
-  "apiVersion": "upload.cdi.kubevirt.io/v1beta1",
-  "metadata": {
-    "name": "upload-datavolume",
-    "namespace": "default",
-    "creationTimestamp": null
-  },
-  "spec": {
-    "pvcName": ""
-  },
-  "status": {
-    "token": "UPLOADTOKEN"
-  }
-}
-```
+=== "yaml"
 
-如果BODY用资源清单yaml，BODY信息如下：
-
-```yaml linenums="1" title="upload-datavolume-token.yaml"
-apiVersion: upload.cdi.kubevirt.io/v1beta1
-kind: UploadTokenRequest
-metadata:
-  name: DV名称
-  namespace: default
-spec:
-  pvcName: DV名称
-```
-
-describe一下`uploadTokenRequest`，
-
-```yaml linenums="1"
-apiVersion: upload.cdi.kubevirt.io/v1beta1
-kind: UploadTokenRequest
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"upload.cdi.kubevirt.io/v1beta1","kind":"UploadTokenRequest","metadata":{"annotations":{},"name":"DV名称","namespace":"default"},"spec":{"pvcName":"DV名称"}}
-  creationTimestamp: null
-  name: DV名称
-  namespace: default
-spec:
-  pvcName: DV名称
-status:
-  token: eyJhbGciOiJQUzUxMiIsImtpZCI6IiJ9.eyJwdmNOYW1lIjoidXBsb2FkLXRlc3QiLCJuYW1lc3BhY2UiOiJkZWZhdWx0IiwiY3JlYXRpb25UaW1lc3RhbXAiOiIyMDE4LTA5LTIxVDE4OjEyOjE5LjQwODI1MDQ4NFoifQ.JWk1VyvzSse3eFiBROKgGoLnOPCiYW9JdDWKXFROEL6XY0O5lFb1R0rwdfWwC3BBOtEA9mC9x3ZGYPnYWO-5G_r1fWKHjF-zifrCX_3Dhp3vfSq6Zfpu-vV0Qn0A3YkSCCmiC_nONAhVjEDuQsRFIKwYcxBoEOpye92ggH2u5FxQE7FwxxH6-RHun9tc_lIFX-ZFKnq7n5tWbjsTmAZI_4rDNgYkVFhFtENU6e-5_Ncokxs3YVzkbSrXweZpRmmaYQOmZhjXSLjKED_2FVq7tYeVueEEhKC_zJ-AEivstALPwPjiwyWXJyfE3dCmbA1sBKuNUrAaDlBvSAp1uPV9eQ
-
-```
-
-可以通过执行以下命令直接获取`UPLOADTOKEN`，
-```bash
-UPLOADTOKEN=$(kubectl apply -f upload-datavolume-token.yaml -o="jsonpath={.status.token}")
-```
+    ```yaml linenums="1" title="upload-datavolume-token.yaml"
+    apiVersion: upload.cdi.kubevirt.io/v1beta1
+    kind: UploadTokenRequest
+    metadata:
+      name: DV名称
+      namespace: default
+    spec:
+      pvcName: DV名称
+    ```
+    
+    describe一下`uploadTokenRequest`，
+    
+    ```yaml linenums="1"
+    apiVersion: upload.cdi.kubevirt.io/v1beta1
+    kind: UploadTokenRequest
+    metadata:
+      annotations:
+        kubectl.kubernetes.io/last-applied-configuration: |
+          {"apiVersion":"upload.cdi.kubevirt.io/v1beta1","kind":"UploadTokenRequest","metadata":{"annotations":{},"name":"DV名称","namespace":"default"},"spec":{"pvcName":"DV名称"}}
+      creationTimestamp: null
+      name: DV名称
+      namespace: default
+    spec:
+      pvcName: DV名称
+    status:
+      token: eyJhbGciOiJQUzUxMiIsImtpZCI6IiJ9.eyJwdmNOYW1lIjoidXBsb2FkLXRlc3QiLCJuYW1lc3BhY2UiOiJkZWZhdWx0IiwiY3JlYXRpb25UaW1lc3RhbXAiOiIyMDE4LTA5LTIxVDE4OjEyOjE5LjQwODI1MDQ4NFoifQ.JWk1VyvzSse3eFiBROKgGoLnOPCiYW9JdDWKXFROEL6XY0O5lFb1R0rwdfWwC3BBOtEA9mC9x3ZGYPnYWO-5G_r1fWKHjF-zifrCX_3Dhp3vfSq6Zfpu-vV0Qn0A3YkSCCmiC_nONAhVjEDuQsRFIKwYcxBoEOpye92ggH2u5FxQE7FwxxH6-RHun9tc_lIFX-ZFKnq7n5tWbjsTmAZI_4rDNgYkVFhFtENU6e-5_Ncokxs3YVzkbSrXweZpRmmaYQOmZhjXSLjKED_2FVq7tYeVueEEhKC_zJ-AEivstALPwPjiwyWXJyfE3dCmbA1sBKuNUrAaDlBvSAp1uPV9eQ
+    
+    ```
+    可以通过执行以下命令直接获取`UPLOADTOKEN`，
+    ```bash
+    UPLOADTOKEN=$(kubectl apply -f upload-datavolume-token.yaml -o="jsonpath={.status.token}")
+    ```
 
 通过`curl`上传数据到`datavolume`，
 

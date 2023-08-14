@@ -38,7 +38,7 @@ theme:
       - content.code.annotate
       - content.code.copy
       # - content.code.select
-      # - content.tabs.link
+      - content.tabs.link
       - content.tooltips
       # - header.autohide
       - navigation.expand
@@ -148,10 +148,12 @@ nav:
           - 实战演练: kubeVirt/kubeVirt/quick-deploy.md
       - 资源列表:
           - 虚拟机实例:
-              - VM资源: kubeVirt/resource/virtualMachine.md
-              - VMI资源: kubeVirt/resource/virtualMachineInstance.md
+              - vm资源: kubeVirt/resource/virtualMachine.md
+              - vmi资源: kubeVirt/resource/virtualMachineInstance.md
           - 虚拟机迁移:
-              - VMIMigration资源: kubeVirt/resource/virtualMachineInstanceMigration.md
+              - vmiMigration资源: kubeVirt/resource/virtualMachineInstanceMigration.md
+          - 虚拟机快照:
+              - vmSnapshot资源: kubeVirt/resource/virtualMachineSnapshot.md
       - 源码分析:
           - virt-controller:
               - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md

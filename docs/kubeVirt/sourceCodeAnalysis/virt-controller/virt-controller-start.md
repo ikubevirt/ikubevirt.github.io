@@ -23,6 +23,12 @@
 
 [//]: # (```)
 
+## 通用源码入口
+
+在此之前，需要知道所有的 kubevirt 组件都是从 `cmd/virt-*` 开始的
+
+![](https://cdn.jsdelivr.net/gh/ikubevirt/ikubevirt.github.io/docs/assets/images/kubeVirt-entry.png){ loading=lazy }
+
 ## 启动流程
 
 首先调用入口函数

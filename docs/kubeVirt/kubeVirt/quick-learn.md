@@ -4,18 +4,13 @@
 
 kubeVirt以CRD的形式将VM管理接口接入到kubernetes中，通过一个pod去使用libvirtd管理VM的方式，实现pod与VM的一一对应，做到如同容器一般去管理虚拟机，并且做到与容器一样的资源管理、调度规划、这一层整体与企业IAAS关系不大，也方便企业的接入，统一纳管。
 
-- `virt-api`: kubeVirt是以CRD形式去管理VM Pod，`virt-api`就是所有虚拟化操作的入口，这里面包括常规的CDR更新验证、以及`console、vm start、stop`等操作。
-- `virt-controller`
-    - `virt-controller`会根据vmi CRD，生成对应的`virt-launcher` Pod，并且维护CRD的状态。
-    - 与kubernetes api-server通讯监控VMI资源的创建删除等状态。
-- `virt-handler`
-    - `virt-handler`会以daemonset形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。
-    - `virt-handler`还会保持集群级别`VMI Spec`与相应libvirt域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足VMI Spec定义的网络和存储要求。
-- `virt-launcher`
-    - 每个`virt-launcher` pod对应着一个VMI，kubelet只负责`virt-launcher` pod运行状态，不会去关心VMI创建情况。
-    - `virt-handler`会根据CRD参数配置去通知`virt-launcher`去使用本地的`libvirtd`实例来启动VMI，随着Pod的生命周期结束，`virt-lanuncher`也会去通知VMI去执行终止操作；
-    - 其次在每个`virt-launcher` pod中还对应着一个`libvirtd`，`virt-launcher`通过`libvirtd`去管理VM的生命周期，这样做到去中心化，不再是以前的虚拟机那套做法，一个`libvirtd`去管理多个VM。
-- `virtctl`: kubeVirt自带类似`kubectl`的命令行工具，它是越过`virt-launcher` pod这一层去直接管理VM虚拟机，可以控制VM的`start、stop、restart`。
+| 组件                | 描述                                                                                                                                                                                                                                                                                                                                      |
+|:------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `virt-api`        | kubeVirt是以CRD形式去管理VM Pod，`virt-api`就是所有虚拟化操作的入口，这里面包括常规的CDR更新验证、以及`console、vm start、stop`等操作。                                                                                                                                                                                                                                           |
+| `virt-controller` | <li> `virt-controller`会根据vmi CRD，生成对应的`virt-launcher` Pod，并维护CRD的状态。<li> 与kubernetes api-server通讯监控VMI资源的创建删除等状态。                                                                                                                                                                                                                       |
+| `virt-handler`    | <li> `virt-handler`会以daemonset形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。<li> `virt-handler`还会保持集群级别`VMI Spec`与相应libvirt域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足VMI Spec定义的网络和存储要求。                                                                                                                   |
+| `virt-launcher`   | <li> 每个`virt-launcher` pod对应着一个VMI，kubelet只负责`virt-launcher` pod运行状态，不会去关心VMI创建情况。<li> `virt-handler`会根据CRD参数配置去通知`virt-launcher`去使用本地的`libvirtd`实例来启动VMI，随着Pod的生命周期结束，`virt-lanuncher`也会去通知VMI去执行终止操作；<li> 其次在每个`virt-launcher` pod中还对应着一个`libvirtd`，`virt-launcher`通过`libvirtd`去管理VM的生命周期，这样做到去中心化，不再是以前的虚拟机那套做法，一个`libvirtd`去管理多个VM。 |
+| `virtctl`         | kubeVirt自带类似`kubectl`的命令行工具，它是越过`virt-launcher` pod这一层去直接管理VM虚拟机，可以控制VM的`start、stop、restart`。                                                                                                                                                                                                                                           |
 
 ## kubeVirt管理虚拟机机制
 
@@ -111,6 +106,8 @@ kubeVirt虚拟机生命周期管理主要分为以下几种状态：
 
 关于资源清单，kubeVirt 主要实现了下面几种资源，以实现对虚拟机的管理：
 
-- `VirtualMachineInstance（VMI）` : 类似于 kubernetes Pod，是管理虚拟机的最小资源。一个 `VirtualMachineInstance` 对象即表示一台正在运行的虚拟机实例，包含一个虚拟机所需要的各种配置。
-- `VirtualMachine（VM）`: 为集群内的 `VirtualMachineInstance` 提供管理功能，例如开机/关机/重启虚拟机，确保虚拟机实例的启动状态，与虚拟机实例是 `1:1` 的关系，类似与 `spec.replica` 为 1 的 `StatefulSet`。
-- `VirtualMachineInstanceReplicaSet` : 类似 `ReplicaSet`，可以启动指定数量的 `VirtualMachineInstance`，并且保证指定数量的 `VirtualMachineInstance` 运行，可以配置 `HPA`。
+| 资源对象                               | 描述                                                                                           |
+|:-----------------------------------|:---------------------------------------------------------------------------------------------|
+| `VirtualMachineInstance（VMI）`      | 类似于 kubernetes Pod，是管理虚拟机的最小资源。一个 `VirtualMachineInstance` 对象即表示一台正在运行的虚拟机实例，包含一个虚拟机所需要的各种配置。|
+| `VirtualMachine（VM）`               | 为集群内的 `VirtualMachineInstance` 提供管理功能，例如开机/关机/重启虚拟机，确保虚拟机实例的启动状态，与虚拟机实例是 `1:1` 的关系，类似与 `spec.replica` 为 1 的 `StatefulSet`。|
+| `VirtualMachineInstanceReplicaSet` | 类似 `ReplicaSet`，可以启动指定数量的 `VirtualMachineInstance`，并且保证指定数量的 `VirtualMachineInstance` 运行，可以配置 `HPA`。|
