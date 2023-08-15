@@ -144,7 +144,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - KubeVirt:
-      - KubeVirt: kubeVirt/index.md
+      - kubeVirt/index.md
       - 快速了解:
           - 架构与生命周期管理: kubeVirt/kubeVirt/quick-learn.md
           - 实战演练: kubeVirt/kubeVirt/quick-deploy.md
@@ -173,6 +173,10 @@ nav:
           - DataImportCron资源: cdi/resource/dataImportCron.md
       - 特性功能:
           - 热插拔卷: cdi/features/hotplug-volume.md
+  - Tekton:
+      - tekton/index.md
+      - SSP Operator部署: tekton/ssp-operator.md
+      - Tekton任务: tekton/tekton-task.md
   - GPU:
       - gpu/index.md
   - 网络:

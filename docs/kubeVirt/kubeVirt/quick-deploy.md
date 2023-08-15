@@ -154,7 +154,7 @@ $ kubectl edit kubevirt kubevirt -n kubevirt
 ### 编排CentOS7虚拟机模板文件
 
 ```yaml linenums="1" title="kubevirt-centos7.yaml"
-apiVersion: kubevirt.io/v1
+apiVersion: kubevirt.io/v1beta1
 kind: VirtualMachine
 metadata:
   name: centos7
