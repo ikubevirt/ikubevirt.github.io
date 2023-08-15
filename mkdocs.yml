@@ -77,6 +77,8 @@ theme:
 # Plugins
 plugins:
   - glightbox
+  - git-revision-date-localized:
+      fallback_to_build_date: true
   - search:
       separator: '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       lang:

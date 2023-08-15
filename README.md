@@ -9,9 +9,8 @@
   </strong>
 </p>
 <p align="center">
-  <a href="https://github.com/ikubevirt/ikubevirt.github.io/actions"><img
-    src="https://github.com/ikubevirt/ikubevirt.github.io/actions/workflows/main.yml/badge.svg?branch=main"
-    alt="Build"
+  <a href="https://github.com/ikubevirt/ikubevirt.github.io/actions" alt="Build"><img
+    src="https://github.com/ikubevirt/ikubevirt.github.io/actions/workflows/build.yml/badge.svg?branch=main"
   /></a>
-  <a alt="License"><img src="https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333"/></a>
+  <a alt="License"><img src="https://img.shields.io/github/license/kubevirt/kubevirt.svg"/></a>
 </p>
