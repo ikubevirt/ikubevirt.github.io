@@ -22,7 +22,7 @@
          - `RunStrategy==Manual`:虚拟机实例VMI运行状况通过start/stop/restart手工来控制。
          - `RunStrategy==Halted`:虚拟机实例VMI应该总是挂起。等同于`spec.running:false`。
     - 更新VMStatus
-         - 修改`vm.Status.Created，vm.Status.Ready`
+         - 修改`vm.Status.Created`，`vm.Status.Ready`
          - 修改`vm.Status.StateChangeRequests`
          - 修改`vm.Status.Conditions`
          - 更新VMStatus
