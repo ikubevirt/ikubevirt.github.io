@@ -151,6 +151,7 @@ nav:
       - 资源列表:
           - 虚拟机实例:
               - vm资源: kubeVirt/resource/virtualMachine.md
+              - vmPool资源: kubeVirt/resource/virtualMachinePool.md
               - vmi资源: kubeVirt/resource/virtualMachineInstance.md
               - vmirs资源: kubeVirt/resource/virtualMachineInstanceReplicaSet.md
           - 虚拟机迁移:

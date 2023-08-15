@@ -40,12 +40,14 @@ kubeVirt资源分为以下几大类。
 <div class="grid cards" markdown>
 
 -  __[VirtualMachine]__ – 深入了解资源`virtualMachine`
+-  __[VirtualMachinePool]__ – 深入了解资源`virtualMachinePool`
 -  __[VirtualMachineInstance]__ – 深入了解资源`virtualMachineInstance`
 -  __[VirtualMachineInstanceReplicaSet]__ – 深入了解资源`virtualMachineInstanceReplicaSet`
 
 </div>
 
   [VirtualMachine]: resource/virtualMachine.md
+  [VirtualMachinePool]: resource/virtualMachinePool.md
   [VirtualMachineInstance]: resource/virtualMachineInstance.md
   [VirtualMachineInstanceReplicaSet]: resource/virtualMachineInstanceReplicaSet.md
 

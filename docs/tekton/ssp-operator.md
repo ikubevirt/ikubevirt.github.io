@@ -1,4 +1,3 @@
-## 什么是SSP
 
 !!! info "SSP Operator定义"
 
