@@ -11,30 +11,6 @@
 
 以下研究内容细分了几项供读者学习和参考。
 
-::cards:: cols="2"
-
-- title: vm资源 
-  content: VirtualMachine
-  image: ../assets/icons/zeus.png
-  url: https://en.wikipedia.org/wiki/Zeus
-
-- title: vmPool资源 
-  content: VirtualMachinePool 
-  image: ../assets/icons/athena.png
-  url: https://en.wikipedia.org/wiki/Athena
-
-- title: vmi资源 
-  content: VirtualMachineInstance 
-  image: ../assets/icons/poseidon.png
-  url: https://en.wikipedia.org/wiki/Poseidon
-
-- title: vmirs资源 
-  content: VirtualMachineInstanceReplicaSet 
-  image: ../assets/icons/artemis.png
-  url: https://en.wikipedia.org/wiki/Artemis
-
-::/cards::
-
 ### 快速了解
 
 <div class="grid cards" markdown>
@@ -61,19 +37,29 @@ kubeVirt资源分为以下几大类。
 
 #### 虚拟机实例
 
-<div class="grid cards" markdown>
+::cards:: cols="2" image-bg
 
--  __[VirtualMachine]__ – 深入了解资源`virtualMachine`
--  __[VirtualMachinePool]__ – 深入了解资源`virtualMachinePool`
--  __[VirtualMachineInstance]__ – 深入了解资源`virtualMachineInstance`
--  __[VirtualMachineInstanceReplicaSet]__ – 深入了解资源`virtualMachineInstanceReplicaSet`
+- title: vm资源 
+  content: VirtualMachine
+  image: ../assets/icons/zeus.png
+  url: ./resource/virtualMachine.md
 
-</div>
+- title: vmPool资源 
+  content: VirtualMachinePool 
+  image: ../assets/icons/athena.png
+  url: ./resource/virtualMachinePool.md
 
-  [VirtualMachine]: resource/virtualMachine.md
-  [VirtualMachinePool]: resource/virtualMachinePool.md
-  [VirtualMachineInstance]: resource/virtualMachineInstance.md
-  [VirtualMachineInstanceReplicaSet]: resource/virtualMachineInstanceReplicaSet.md
+- title: vmi资源 
+  content: VirtualMachineInstance 
+  image: ../assets/icons/poseidon.png
+  url: ./resource/virtualMachineInstance.md
+
+- title: vmirs资源 
+  content: VirtualMachineInstanceReplicaSet 
+  image: ../assets/icons/artemis.png
+  url: ./resource/virtualMachineInstanceReplicaSet.md
+
+::/cards::
 
 #### 虚拟机迁移
 

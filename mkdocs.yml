@@ -126,10 +126,7 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+  - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -144,8 +141,10 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.critic:
       mode: view
-  - pymdownx.details
+  - neoteroi.spantable
+  - neoteroi.timeline
   - neoteroi.cards
+  - neoteroi.projects
 
 # Page tree
 nav:
