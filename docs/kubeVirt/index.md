@@ -11,7 +11,29 @@
 
 以下研究内容细分了几项供读者学习和参考。
 
-[cards cols="3"(./docs/assets/data/settings.yaml)]
+::cards:: cols="2"
+
+- title: vm资源 
+  content: VirtualMachine
+  image: ../assets/icons/zeus.png
+  url: https://en.wikipedia.org/wiki/Zeus
+
+- title: vmPool资源 
+  content: VirtualMachinePool 
+  image: ../assets/icons/athena.png
+  url: https://en.wikipedia.org/wiki/Athena
+
+- title: vmi资源 
+  content: VirtualMachineInstance 
+  image: ../assets/icons/poseidon.png
+  url: https://en.wikipedia.org/wiki/Poseidon
+
+- title: vmirs资源 
+  content: VirtualMachineInstanceReplicaSet 
+  image: ../assets/icons/artemis.png
+  url: https://en.wikipedia.org/wiki/Artemis
+
+::/cards::
 
 ### 快速了解
 
