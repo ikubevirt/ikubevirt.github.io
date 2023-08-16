@@ -76,8 +76,13 @@ theme:
 
 # Plugins
 plugins:
+  - mike:
+      version_selector: false
+      canonical_version: null
   - glightbox
   - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
       fallback_to_build_date: true
   - search:
       separator: '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -94,6 +99,7 @@ extra:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/neoteroi.css
 
 # Extensions
 markdown_extensions:
@@ -139,6 +145,7 @@ markdown_extensions:
   - pymdownx.critic:
       mode: view
   - pymdownx.details
+  - neoteroi.cards
 
 # Page tree
 nav:

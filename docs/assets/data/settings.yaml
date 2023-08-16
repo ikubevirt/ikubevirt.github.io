@@ -1,0 +1,25 @@
+- title: Zeus
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/zeus.png
+  url: https://ikubevirt.cn/kubeVirt/kubeVirt/quick-learn/
+
+- title: Athena
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/athena.png
+  url: https://ikubevirt.cn/kubeVirt/kubeVirt/quick-deploy/
+
+- title: Poseidon
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/poseidon.png
+
+- title: Artemis
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/artemis.png
+
+- title: Ares
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/ares.png
+
+- title: pegasus
+  content: Lorem ipsum dolor sit amet.
+  image: ../assets/icons/pegasusHorse.png

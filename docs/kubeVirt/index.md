@@ -11,6 +11,8 @@
 
 以下研究内容细分了几项供读者学习和参考。
 
+[cards cols="3"(./docs/assets/data/settings.yaml)]
+
 ### 快速了解
 
 <div class="grid cards" markdown>

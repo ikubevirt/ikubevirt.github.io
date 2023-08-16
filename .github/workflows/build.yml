@@ -25,4 +25,5 @@ jobs:
               "jieba>=0.42.1" \
               "mkdocs-glightbox>=0.3.4" \
               "mkdocs-git-revision-date-localized-plugin>=1.2.0"
+              "neoteroi-mkdocs>=1.0.4"
       - run: mkdocs gh-deploy --force
