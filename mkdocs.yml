@@ -58,9 +58,9 @@ theme:
       - toc.follow
       # - toc.integrate
   palette:
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - scheme: dracula
+      primary: deep orange
+      accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -79,7 +79,6 @@ plugins:
   - mike:
       version_selector: false
       canonical_version: null
-  - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
@@ -153,7 +152,7 @@ nav:
       - kubeVirt/index.md
       - 快速了解:
           - 架构与生命周期管理: kubeVirt/kubeVirt/quick-learn.md
-          - 实战演练: kubeVirt/kubeVirt/quick-deploy.md
+          - 虚拟机部署实战: kubeVirt/kubeVirt/quick-deploy.md
       - 资源列表:
           - 虚拟机实例:
               - vm资源: kubeVirt/resource/virtualMachine.md
@@ -176,8 +175,8 @@ nav:
   - CDI:
       - cdi/index.md
       - 资源列表:
-          - DataVolume资源: cdi/resource/dataVolume.md
-          - DataImportCron资源: cdi/resource/dataImportCron.md
+          - DV资源: cdi/resource/dataVolume.md
+          - DIC资源: cdi/resource/dataImportCron.md
       - 特性功能:
           - 热插拔卷: cdi/features/hotplug-volume.md
   - Tekton:

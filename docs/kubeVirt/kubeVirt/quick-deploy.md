@@ -4,7 +4,7 @@
 
 首先，我们需要安装`libvirt`和`qemu`，
 
-```bash linenums="1"
+```shell linenums="1"
 yum install -y qemu-kvm libvirt virt-install bridge-utils
 ```
 

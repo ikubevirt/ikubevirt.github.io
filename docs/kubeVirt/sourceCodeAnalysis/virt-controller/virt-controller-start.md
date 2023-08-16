@@ -99,6 +99,8 @@ app.initCloneController()
 ### 通过`leaderElector`启动virt-controller
 
 通过`leaderElector`来启动virt-controller，并在`leaderElector`中启动各个controller的`Run`函数。
+
+//// collapse-code
 ```go linenums="1" title="kubevirt/pkg/virt-controller/watch/application.go"
 func (vca *VirtControllerApp) Run() {
   logger := log.Log
@@ -131,7 +133,8 @@ func (vca *VirtControllerApp) Run() {
   panic("unreachable")
 }
 ```
-
+////
+///
 ## virt-controller分析
 
 <div class="grid cards" markdown>

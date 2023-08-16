@@ -13,94 +13,22 @@
 
 ### 快速了解
 
-<div class="grid cards" markdown>
-
--  __[架构与生命周期管理]__ – 快速了解kubeVirt的架构和生命周期管理
--  __[实战演练]__ – 实践是检验真理的唯一标准
-
-[//]: # (- :material-page-layout-header: __[Header]__ – Customize the behavior of the header, add an announcement bar)
-
-[//]: # (- :material-page-layout-footer: __[Footer]__ – Add links to your social media profiles or websites in the footer )
-
-[//]: # (- :material-tab-search: __[Search]__ – Set up and configure search, running entirely in the user's browser)
-
-[//]: # (- :material-tag-plus-outline: __[Tags]__ – Categorize your pages with tags and group related pages)
-
-</div>
-
-  [架构与生命周期管理]: kubeVirt/quick-learn.md
-  [实战演练]: kubeVirt/quick-deploy.md
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/kubeVirt.yaml)]
 
 ### 资源列表
 
-kubeVirt资源分为以下几大类。
+kubeVirt资源分为以下几大类：
 
-#### 虚拟机实例
-
-::cards:: cols="2" image-bg
-
-- title: vm资源 
-  content: VirtualMachine
-  image: ../assets/icons/zeus.png
-  url: ./resource/virtualMachine.md
-
-- title: vmPool资源 
-  content: VirtualMachinePool 
-  image: ../assets/icons/athena.png
-  url: ./resource/virtualMachinePool.md
-
-- title: vmi资源 
-  content: VirtualMachineInstance 
-  image: ../assets/icons/poseidon.png
-  url: ./resource/virtualMachineInstance.md
-
-- title: vmirs资源 
-  content: VirtualMachineInstanceReplicaSet 
-  image: ../assets/icons/artemis.png
-  url: ./resource/virtualMachineInstanceReplicaSet.md
-
-::/cards::
-
-#### 虚拟机迁移
-
-<div class="grid cards" markdown>
-
--  __[VirtualMachineInstanceMigration]__ – 深入了解资源`virtualMachineInstanceMigration`
-
-</div>
-
-  [VirtualMachineInstanceMigration]: resource/virtualMachineInstanceMigration.md
-
-#### 虚拟机快照
-
-<div class="grid cards" markdown>
-
--  __[VirtualMachineSnapshot]__ – 深入了解资源`virtualMachineSnapshot`
-
-</div>
-
-  [VirtualMachineSnapshot]: resource/virtualMachineSnapshot.md
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/vmi.yaml)]
 
 ### 特性功能
 
-<div class="grid cards" markdown>
+kubeVirt具备以下特性功能：
 
--  __[内核同页合并]__ – 深入了解特性内核同页合并
-
-</div>
-
-  [内核同页合并]: features/ksm.md
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/features.yaml)]
 
 ### 源码分析
 
-<div class="grid cards" markdown>
+kubeVirt源码分析细分以下组件：
 
--  __[virt-controller]__ – 深入了解组件`virt-controller`
--  __[virt-launcher]__ – 深入了解组件`virt-launcher`
--  __[virt-handler]__ – 深入了解组件`virt-handler`
-
-</div>
-
-  [virt-controller]: sourceCodeAnalysis/virt-controller/virt-controller-start.md
-  [virt-launcher]: sourceCodeAnalysis/virt-launcher.md
-  [virt-handler]: sourceCodeAnalysis/virt-handler.md
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/virt-components.yaml)]

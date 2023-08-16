@@ -37,22 +37,12 @@ CDI始终做以下事情：
 
 ### 资源列表
 
-<div class="grid cards" markdown>
+cdi资源分为以下几大类：
 
--  __[DataVolume]__ – 深入了解资源`dataVolume`
--  __[DataImportCron]__ – 深入了解资源`dataImportCron`
-
-</div>
-
-  [DataVolume]: resource/dataVolume.md
-  [DataImportCron]: resource/dataImportCron.md
+[cards cols="3" image-tags(./docs/assets/data/cdi/cdi.yaml)]
 
 ### 特性功能
 
-<div class="grid cards" markdown>
+cdi具备以下特性功能：
 
--  __[热插拔卷]__ – 深入了解特性热插拔卷
-
-</div>
-
-  [热插拔卷]: features/hotplug-volume.md
+[cards cols="3" image-tags(./docs/assets/data/cdi/features.yaml)]

@@ -1,0 +1,9 @@
+- title: DV资源
+  content: DataVolume
+  image: ../assets/icons/demeter.png
+  url: ./resource/dataVolume.md
+
+- title: DIC资源
+  content: DataImportCron
+  image: ../assets/icons/dionysus.png
+  url: ./resource/dataImportCron.md

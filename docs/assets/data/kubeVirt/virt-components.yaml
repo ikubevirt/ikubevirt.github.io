@@ -1,0 +1,14 @@
+- title: virt-controller组件
+  content: virt-controller
+  image: ../assets/icons/cerberus.png
+  url: ./sourceCodeAnalysis/virt-controller/virt-controller-start.md
+
+- title: virt-launcher组件
+  content: virt-launcher
+  image: ../assets/icons/chimera.png
+  url: ./sourceCodeAnalysis/virt-launcher.md
+
+- title: virt-handler组件
+  content: virt-handler
+  image: ../assets/icons/cyclops.png
+  url: ./sourceCodeAnalysis/virt-handler.md

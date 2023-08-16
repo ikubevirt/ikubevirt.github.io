@@ -1,0 +1,29 @@
+- title: vm资源
+  content: VirtualMachine
+  image: ../assets/icons/zeus.png
+  url: ./resource/virtualMachine.md
+
+- title: vmPool资源
+  content: VirtualMachinePool
+  image: ../assets/icons/athena.png
+  url: ./resource/virtualMachinePool.md
+
+- title: vmi资源
+  content: VirtualMachineInstance
+  image: ../assets/icons/poseidon.png
+  url: ./resource/virtualMachineInstance.md
+
+- title: vmirs资源
+  content: VirtualMachineInstanceReplicaSet
+  image: ../assets/icons/artemis.png
+  url: ./resource/virtualMachineInstanceReplicaSet.md
+
+- title: vmiMigration资源
+  content: VirtualMachineInstanceMigration
+  image: ../assets/icons/astrology.png
+  url: ./resource/virtualMachineInstanceMigration.md
+
+- title: vmSnapshot资源
+  content: VirtualMachineSnapshot
+  image: ../assets/icons/atlas.png
+  url: ./resource/virtualMachineSnapshot.md
