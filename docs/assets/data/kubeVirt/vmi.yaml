@@ -20,7 +20,7 @@
 
 - title: vmiMigration资源
   content: VirtualMachineInstanceMigration
-  image: ../assets/icons/astrology.png
+  image: ../assets/icons/hera.png
   url: ./resource/virtualMachineInstanceMigration.md
 
 - title: vmSnapshot资源

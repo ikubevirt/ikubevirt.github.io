@@ -1,6 +1,6 @@
 ## kubeVirt的架构
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/kubeVirt-infra.png){ loading=lazy }
+![](../../assets/images/kubeVirt-infra.png){ loading=lazy }
 
 kubeVirt以CRD的形式将VM管理接口接入到kubernetes中，通过一个pod去使用libvirtd管理VM的方式，实现pod与VM的一一对应，做到如同容器一般去管理虚拟机，并且做到与容器一样的资源管理、调度规划、这一层整体与企业IAAS关系不大，也方便企业的接入，统一纳管。
 
@@ -44,13 +44,13 @@ Hypervisor（VMM）虚拟机监视器有以下分类：
 
 ### 虚拟机镜像制作与管理
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/virt-image-construction-flow.png){ loading=lazy }
+![](../../assets/images/virt-image-construction-flow.png){ loading=lazy }
 
 虚拟机镜像采用容器镜像形式存放在镜像仓库中。创建原理如上图所示，将Linux发行版本的镜像文件存放到基础镜像的`/disk`目录内，镜像格式支持`qcow2、raw、img`。通过Dockerfile文件将虚拟机镜像制作成容器镜像，然后分别推送到不同的registry镜像仓库中。客户在创建虚拟机时，根据配置的优先级策略拉取registry中的虚拟机容器镜像，如果其中一台registry故障，会另一台健康的registry拉取镜像。
 
 ### 虚拟机生命周期管理
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/virt-lifecycle.png){ loading=lazy }
+![](../../assets/images/virt-lifecycle.png){ loading=lazy }
 
 kubeVirt虚拟机生命周期管理主要分为以下几种状态：
 
@@ -63,7 +63,7 @@ kubeVirt虚拟机生命周期管理主要分为以下几种状态：
 
 关于虚拟机的创建流程如下图：
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/virt-vm-start.png){ loading=lazy }
+![](../../assets/images/virt-vm-start.png){ loading=lazy }
 
 创建流程具体描述：
 

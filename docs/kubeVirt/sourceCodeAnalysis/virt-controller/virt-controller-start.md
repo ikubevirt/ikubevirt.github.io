@@ -27,7 +27,7 @@
 
 在此之前，需要知道所有的 kubevirt 组件都是从 `cmd/virt-*` 开始的
 
-![](https://cdn.jsdelivr.net/gh/ikubevirt/ikubevirt.github.io/docs/assets/images/kubeVirt-entry.png){ loading=lazy }
+![](../../../assets/images/kubeVirt-entry.png){ loading=lazy }
 
 ## 启动流程
 
@@ -81,7 +81,7 @@ app.kubeVirtInformer = app.informerFactory.KubeVirt()
 ### 初始化一系列controller
 
 这一系列controller主要包括`vmiController`、`nodeController`、`migrationController`、`vmController`、`evacuationController`、`snapshotController`、`restoreController`、`replicaSetController`、`disruptionBudgetController`
-```go linenums="1" title="kubevirt/pkg/virt-controller/watch/application.go"
+```{.go linenums="1" title="kubevirt/pkg/virt-controller/watch/application.go"}
 // 初始化一系列controller
 app.initCommon()
 app.initReplicaSet()
@@ -99,9 +99,8 @@ app.initCloneController()
 ### 通过`leaderElector`启动virt-controller
 
 通过`leaderElector`来启动virt-controller，并在`leaderElector`中启动各个controller的`Run`函数。
-
-//// collapse-code
-```go linenums="1" title="kubevirt/pkg/virt-controller/watch/application.go"
+ 
+```{.go linenums="1" title="kubevirt/pkg/virt-controller/watch/application.go"}
 func (vca *VirtControllerApp) Run() {
   logger := log.Log
 
@@ -133,8 +132,7 @@ func (vca *VirtControllerApp) Run() {
   panic("unreachable")
 }
 ```
-////
-///
+
 ## virt-controller分析
 
 <div class="grid cards" markdown>

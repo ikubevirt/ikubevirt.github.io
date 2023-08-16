@@ -122,6 +122,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
+#      linenums: true
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -133,6 +134,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: md-render
+          class: md-render
+          format: !!python/name:tools.pymdownx_md_render.md_sub_render
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -144,6 +148,9 @@ markdown_extensions:
   - neoteroi.timeline
   - neoteroi.cards
   - neoteroi.projects
+  - tools.collapse_code:
+      expand_text: ''
+      collapse_text: ''
 
 # Page tree
 nav:

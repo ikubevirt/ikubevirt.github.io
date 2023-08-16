@@ -86,7 +86,7 @@ chmod +x /usr/local/bin/virtctl
 
 下载 CentOS7 镜像，选择阿里云镜像站 [https://mirrors.aliyun.com/centos/7/isos/x86_64/](https://mirrors.aliyun.com/centos/7/isos/x86_64/)
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/aliyun-image-source.png){ loading=lazy }
+![](../../assets/images/aliyun-image-source.png){ loading=lazy }
 
 ### 上传镜像文件
 
@@ -153,7 +153,8 @@ $ kubectl edit kubevirt kubevirt -n kubevirt
 
 ### 编排CentOS7虚拟机模板文件
 
-```yaml linenums="1" title="kubevirt-centos7.yaml"
+//// collapse-code
+```yaml title="kubevirt-centos7.yaml"
 apiVersion: kubevirt.io/v1beta1
 kind: VirtualMachine
 metadata:
@@ -205,6 +206,7 @@ spec:
           image: kubevirt/virtio-container-disk
         name: virtiocontainerdisk
 ```
+////
 
 这里用到了 3 个 Volume：
 

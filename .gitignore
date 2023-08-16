@@ -1,2 +1,6 @@
 /.idea/
 /public/
+/material/__pycache__/
+/material/plugins/__pycache__/
+/material/plugins/search/__pycache__/
+/tools/__pycache__/

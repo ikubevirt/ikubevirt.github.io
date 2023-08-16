@@ -36,4 +36,4 @@
 
 我们假设现在有一个running的kvm（即存在一个running状态的vmi和pod），此时apply一个`VirtualMachineInstanceMigration`会发生什么：
 
-![](https://cdn.jsdelivr.net/gh/ikubevirt/ikubevirt.github.io/docs/assets/images/vm-migration-flow.png){ loading=lazy }
+![](../../assets/images/vm-migration-flow.png){ loading=lazy }

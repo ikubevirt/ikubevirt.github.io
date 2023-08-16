@@ -26,7 +26,8 @@ VirtualMachinePool 允许我们在`spec.virtualMachineTemplate` 中指定`Virtua
 
 VirtualMachinePool 是 Kubevirt API `pool.kubevirt.io/v1alpha1` 的一部分。以下是创建VirtualMachinePool的示例，
 
-```yaml linenums="1" title="vm-pool-cirros.yaml"
+//// collapse-code
+```yaml title="vm-pool-cirros.yaml"
 apiVersion: pool.kubevirt.io/v1alpha1
 kind: VirtualMachinePool
 metadata:
@@ -64,10 +65,12 @@ spec:
               image: kubevirt/cirros-container-disk-demo:latest
             name: containerdisk
 ```
+////
 
 提交上述资源清单文件，
 
-```bash linenums="1"
+//// collapse-code
+```bash
 $ kubectl create -f vm-pool-cirros.yaml
 virtualmachinepool.pool.kubevirt.io/vm-pool-cirros created
 $ kubectl describe vmpool vm-pool-cirros
@@ -140,6 +143,7 @@ Events:
   Normal  SuccessfulCreate  17s   virtualmachinepool-controller  Created VM default/vm-pool-cirros-2
   Normal  SuccessfulCreate  17s   virtualmachinepool-controller  Created VM default/vm-pool-cirros-1
 ```
+////
 
 `Replicas` 为 3，`Ready Replicas` 为 2。这意味着在显示状态时，已经创建了三个虚拟机，但只有两个正在运行并准备就绪。
 
