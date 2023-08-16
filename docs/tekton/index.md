@@ -18,15 +18,9 @@
 
 以下研究内容细分了几项供读者学习和参考。
 
-### SSP Operator部署
+### 相关 Operator
 
-<div class="grid cards" markdown>
-
--  __[SSP Operator部署]__ – 深入了解如何部署SSP Operator
-
-</div>
-
-  [SSP Operator部署]: ssp-operator.md
+[cards cols="3" image-tags(./docs/assets/data/tekton/operator.yaml)]
 
 ### Tekton任务
 
