@@ -171,7 +171,11 @@ nav:
           - 虚拟机快照:
               - vmSnapshot资源: kubeVirt/resource/virtualMachineSnapshot.md
       - 特性功能:
+          - 节点分配: kubeVirt/features/node-assignment.md
+          - 节点维护: kubeVirt/features/node-maintenance.md
+          - 节点过度使用管理: kubeVirt/features/node-overcommit.md
           - 内核同页合并: kubeVirt/features/ksm.md
+          - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
       - 源码分析:
           - virt-controller:
               - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md

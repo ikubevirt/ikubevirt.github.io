@@ -5,7 +5,7 @@
 
 SSP 作为`hyperconverged-cluster-operator`的一部分，也可以由用户从最新版本独立部署。
 
-!!! note
+!!! note "备注"
 
     SSP 需要 Tekton 才能工作。
 
