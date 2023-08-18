@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # kubeVirt概览
 
 ## 研发背景

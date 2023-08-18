@@ -92,6 +92,11 @@ plugins:
       minify_html: true
 
 extra:
+  comments:
+    enabled: true
+    # defaults to utterances unless replaced with mode: giscus
+    mode: utterances
+    type: issues
   version:
     provider: mike
     default: latest

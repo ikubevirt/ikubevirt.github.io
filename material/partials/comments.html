@@ -1,3 +1,82 @@
 {#-
   This file was automatically generated - do not edit
 -#}
+{% if config.extra.comments.enabled and page and page.meta and page.meta.comments == false %}
+  	<!-- disbale comments -->
+  {% else %}
+	<h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+	{% if config.extra.comments.mode == "giscus" %}
+		<script src="https://giscus.app/client.js"
+		        data-repo="ikubevirt/ikubevirt.github.io"
+		        data-repo-id="ikubevirt"
+		        data-category="Announcements"
+		        data-category-id="<category_id>"
+		        data-mapping="pathname"
+		        data-reactions-enabled="1"
+		        data-emit-metadata="0"
+		        data-input-position="top"
+		        data-theme="dark"
+		        data-lang="en"
+		        crossorigin="anonymous"
+		        async>
+		</script>
+	{% else %}
+		<script src="https://utteranc.es/client.js"
+		        repo="ikubevirt/ikubevirt.github.io"
+		        issue-term="pathname"
+		        theme="photon-dark"
+		        crossorigin="anonymous"
+		        async>
+		</script>
+	{% endif %}
+
+	<!-- Reload on palette change -->
+	<script>
+	var palette = __md_get("__palette")
+	if (palette && typeof palette.color === "object")
+	  if (palette.color.scheme === "dracula") {
+	  	{% if config.extra.comments.mode == "giscus" %}
+	    	var giscus = document.querySelector("script[src*=giscus]")
+	    	giscus.setAttribute("data-theme", "dark")
+	    {% else %}
+	    	var utterances = document.querySelector("script[src*=utteranc]")
+	    	utterances.setAttribute("theme", "photon-dark")
+	    {% endif %}
+	  } else {
+        {% if config.extra.comments.mode == "giscus" %}
+	    	var giscus = document.querySelector("script[src*=giscus]")
+	    	giscus.setAttribute("data-theme", "light")
+	    {% else %}
+            var utterances = document.querySelector("script[src*=utteranc]")
+	    	utterances.setAttribute("theme", "github-light")
+	    {% endif %}
+      }
+
+	/* Register event handlers after documented loaded */
+	document.addEventListener("DOMContentLoaded", function() {
+	  var ref = document.querySelector("[data-md-component=palette]")
+	  ref.addEventListener("change", function() {
+	    var palette = __md_get("__palette")
+	    if (palette && typeof palette.color === "object") {
+	      var theme = palette.color.scheme === "dracula" ? "photon-dark" : "github-light"
+	    {% if config.extra.comments.mode == "giscus" %}
+	      /* Instruct Giscus to change theme */
+	      var frame = document.querySelector(".giscus-frame")
+	      frame.contentWindow.postMessage(
+	        { giscus: { setConfig: { theme } } },
+	        "https://giscus.app"
+	      )
+	    {% else %}
+	      /* Instruct Utterances to change theme */
+	      const message = {
+              type: 'set-theme',
+              theme: theme
+            };
+            var utterances = document.querySelector('iframe');
+            utterances.contentWindow.postMessage(message, 'https://utteranc.es');
+	    {% endif %}
+	    }
+	  })
+	})
+	</script>
+  {% endif %}
