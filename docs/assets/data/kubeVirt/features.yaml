@@ -22,3 +22,8 @@
   content: VM Memory Dump
   image: ../assets/icons/hercules.png
   url: ./features/vm-mem-dump.md
+
+- title: Tekton
+  content: Tekton
+  image: ../assets/icons/minotaur.png
+  url: ./features/tekton/index.md

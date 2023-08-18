@@ -176,6 +176,12 @@ nav:
           - 节点过度使用管理: kubeVirt/features/node-overcommit.md
           - 内核同页合并: kubeVirt/features/ksm.md
           - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
+          - Tekton:
+            - kubeVirt/features/tekton/index.md
+            - 相关Operator:
+                - HyperConverged Cluster Operator: kubeVirt/features/tekton/hyperConverged-cluster-operator.md
+                - SSP Operator: kubeVirt/features/tekton/ssp-operator.md
+            - Tekton任务: kubeVirt/features/tekton/tekton-task.md
       - 源码分析:
           - virt-controller:
               - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md
@@ -191,12 +197,6 @@ nav:
           - DIC资源: cdi/resource/dataImportCron.md
       - 特性功能:
           - 热插拔卷: cdi/features/hotplug-volume.md
-  - Tekton:
-      - tekton/index.md
-      - 相关Operator:
-          - HyperConverged Cluster Operator: tekton/hyperConverged-cluster-operator.md
-          - SSP Operator: tekton/ssp-operator.md
-      - Tekton任务: tekton/tekton-task.md
   - GPU:
       - gpu/index.md
   - 网络:

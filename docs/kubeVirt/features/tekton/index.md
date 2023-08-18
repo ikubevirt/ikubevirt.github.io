@@ -11,8 +11,8 @@
 
 </div>
 
-  [KubeVirt]: ../kubeVirt/index.md
-  [CDI]: ../cdi/index.md
+  [KubeVirt]: ../../index.md
+  [CDI]: ../../../cdi/index.md
 
 ## 研究内容
 
@@ -24,10 +24,4 @@
 
 ### Tekton任务
 
-<div class="grid cards" markdown>
-
--  __[Tekton任务]__ – 深入了解Tekton任务
-
-</div>
-
-  [Tekton任务]: tekton-task.md
+[cards cols="3" image-tags(./docs/assets/data/tekton/tekton.yaml)]
