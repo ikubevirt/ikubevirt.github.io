@@ -1,0 +1,9 @@
+- title: HostPath
+  content: HostPath
+  image: ../assets/icons/persephone.png
+  url: ./local/hostPath.md
+
+- title: Local PV
+  content: Local PV
+  image: ../assets/icons/perseus.png
+  url: ./local/localPv.md

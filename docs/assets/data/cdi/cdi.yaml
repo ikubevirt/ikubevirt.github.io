@@ -7,3 +7,8 @@
   content: DataImportCron
   image: ../assets/icons/dionysus.png
   url: ./resource/dataImportCron.md
+
+- title: 对象传输资源
+  content: ObjectTransfer
+  image: ../assets/icons/pegasusHorse.png
+  url: ./resource/objectTransfer.md

@@ -1,0 +1,14 @@
+- title: 架构和组件
+  content: Infrastructure and Components
+  image: ../assets/icons/themis.png
+  url: ./ceph/infrastructure.md
+
+- title: 块存储
+  content: Block Storage
+  image: ../assets/icons/titan.png
+  url: ./ceph/block-storage.md
+
+- title: 部署安装
+  content: Installation
+  image: ../assets/icons/trident.png
+  url: ./ceph/installation.md

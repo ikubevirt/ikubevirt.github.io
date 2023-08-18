@@ -195,8 +195,22 @@ nav:
       - 资源列表:
           - DV资源: cdi/resource/dataVolume.md
           - DIC资源: cdi/resource/dataImportCron.md
+          - 对象传输资源: cdi/resource/objectTransfer.md
       - 特性功能:
           - 热插拔卷: cdi/features/hotplug-volume.md
+  - 存储:
+      - storage/index.md
+      - Local本地存储:
+          - HostPath: storage/local/hostPath.md
+          - Local PV: storage/local/localPv.md
+      - OpenEBS存储:
+          - 控制平面: storage/openEBS/control-plane.md
+          - 数据平面: storage/openEBS/data-plane.md
+          - 节点磁盘管理器: storage/openEBS/node-disk-manager.md
+      - Ceph存储:
+          - 架构和组件: storage/ceph/infrastructure.md
+          - 块存储: storage/ceph/block-storage.md
+          - 部署安装: storage/ceph/installation.md
   - GPU:
       - gpu/index.md
   - 网络:
