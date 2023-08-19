@@ -29,7 +29,25 @@ kubeVirt资源分为以下几大类：
 
 kubeVirt具备以下特性功能：
 
-[cards cols="3" image-tags(./docs/assets/data/kubeVirt/features.yaml)]
+- 节点管理
+- 内存管理
+- 构建管理
+
+#### 节点管理
+
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/features-node.yaml)]
+
+#### 内存管理
+
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/features-mem.yaml)]
+
+#### 构建管理
+
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/features-build.yaml)]
+
+### Operators
+
+[cards cols="3" image-tags(./docs/assets/data/kubeVirt/operator.yaml)]
 
 ### 源码分析
 

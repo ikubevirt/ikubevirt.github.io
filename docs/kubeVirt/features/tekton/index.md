@@ -22,6 +22,6 @@
 
 [cards cols="3" image-tags(./docs/assets/data/tekton/operator.yaml)]
 
-### Tekton任务
+### Tekton
 
 [cards cols="3" image-tags(./docs/assets/data/tekton/tekton.yaml)]

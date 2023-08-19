@@ -1,3 +1,8 @@
+- title: Tekton 安装
+  content: Tekton Installation
+  image: ../../../assets/icons/eros.png
+  url: ./installation.md
+
 - title: Tekton 任务
   content: Tekton Task
   image: ../../../assets/icons/pandora.png

@@ -171,22 +171,30 @@ nav:
               - vmPool资源: kubeVirt/resource/virtualMachinePool.md
               - vmi资源: kubeVirt/resource/virtualMachineInstance.md
               - vmirs资源: kubeVirt/resource/virtualMachineInstanceReplicaSet.md
+              - vmiPreset资源: kubeVirt/resource/virtualMachineInstancePreset.md
+              - vmExport资源: kubeVirt/resource/virtualMachineExport.md
           - 虚拟机迁移:
               - vmiMigration资源: kubeVirt/resource/virtualMachineInstanceMigration.md
+              - migrationPolicy资源: kubeVirt/resource/migrationPolicy.md
           - 虚拟机快照:
               - vmSnapshot资源: kubeVirt/resource/virtualMachineSnapshot.md
+              - vmRestore资源: kubeVirt/resource/virtualMachineRestore.md
       - 特性功能:
-          - 节点分配: kubeVirt/features/node-assignment.md
-          - 节点维护: kubeVirt/features/node-maintenance.md
-          - 节点过度使用管理: kubeVirt/features/node-overcommit.md
-          - 内核同页合并: kubeVirt/features/ksm.md
-          - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
-          - Tekton:
-            - kubeVirt/features/tekton/index.md
-            - 相关Operator:
-                - HyperConverged Cluster Operator: kubeVirt/features/tekton/hyperConverged-cluster-operator.md
-                - SSP Operator: kubeVirt/features/tekton/ssp-operator.md
-            - Tekton任务: kubeVirt/features/tekton/tekton-task.md
+          - 节点管理:
+            - 节点分配: kubeVirt/features/node-assignment.md
+            - 节点维护: kubeVirt/features/node-maintenance.md
+            - 节点过度使用管理: kubeVirt/features/node-overcommit.md
+          - 内存管理:
+            - 内核同页合并: kubeVirt/features/ksm.md
+            - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
+          - 构建管理:
+            - Tekton:
+              - kubeVirt/features/tekton/index.md
+              - Tekton安装: kubeVirt/features/tekton/installation.md
+              - Tekton任务: kubeVirt/features/tekton/tekton-task.md
+      - Operators:
+          - HCO: kubeVirt/operators/hyperConverged-cluster-operator.md
+          - SSP: kubeVirt/operators/ssp-operator.md
       - 源码分析:
           - virt-controller:
               - 启动流程: kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start.md
@@ -212,6 +220,7 @@ nav:
           - 控制平面: storage/openEBS/control-plane.md
           - 数据平面: storage/openEBS/data-plane.md
           - 节点磁盘管理器: storage/openEBS/node-disk-manager.md
+          - 部署安装: storage/openEBS/installation.md
       - Ceph存储:
           - 架构和组件: storage/ceph/infrastructure.md
           - 块存储: storage/ceph/block-storage.md

@@ -13,17 +13,3 @@
   image: ../assets/icons/lightning.png
   url: ./features/node-overcommit.md
 
-- title: 内核同页合并
-  content: Kernel Same-page Merging
-  image: ../assets/icons/centaur.png
-  url: ./features/ksm.md
-
-- title: 虚拟机内存转储
-  content: VM Memory Dump
-  image: ../assets/icons/hercules.png
-  url: ./features/vm-mem-dump.md
-
-- title: Tekton
-  content: Tekton
-  image: ../assets/icons/minotaur.png
-  url: ./features/tekton/index.md

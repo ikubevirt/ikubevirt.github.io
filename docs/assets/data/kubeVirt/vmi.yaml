@@ -18,12 +18,32 @@
   image: ../assets/icons/artemis.png
   url: ./resource/virtualMachineInstanceReplicaSet.md
 
+- title: vmiPreset资源
+  content: VirtualMachineInstancePreset
+  image: ../assets/icons/demeter.png
+  url: ./resource/virtualMachineInstancePreset.md
+
+- title: vmExport资源
+  content: VirtualMachineExport
+  image: ../assets/icons/dionysus.png
+  url: ./resource/virtualMachineExport.md
+
 - title: vmiMigration资源
   content: VirtualMachineInstanceMigration
   image: ../assets/icons/hera.png
   url: ./resource/virtualMachineInstanceMigration.md
 
+- title: migrationPolicy资源
+  content: MigrationPolicy
+  image: ../assets/icons/aphrodite.png
+  url: ./resource/migrationPolicy.md
+
 - title: vmSnapshot资源
   content: VirtualMachineSnapshot
   image: ../assets/icons/atlas.png
   url: ./resource/virtualMachineSnapshot.md
+
+- title: vmRestore资源
+  content: VirtualMachineRestore
+  image: ../assets/icons/pegasusHorse.png
+  url: ./resource/virtualMachineRestore.md

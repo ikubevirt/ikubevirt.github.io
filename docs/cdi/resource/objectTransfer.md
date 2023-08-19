@@ -20,7 +20,7 @@ spec:
 
 命名空间源中的 PersistentVolumeClaim `source-pvc` 将移动到具有给定名称`destination-pvc` 的命名空间目标。
 
-!!! note "备注"
+!!! warning "注意"
 
     请注意，这是集群范围的资源。
 

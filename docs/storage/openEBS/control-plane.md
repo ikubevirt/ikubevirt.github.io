@@ -20,3 +20,36 @@ OpenEBS 提供了一个动态供应器，它是标准的 Kubernetes 外部存储
 
 ## OpenEBS PV Provisioner
 
+![](../../assets/images/provisioning-flow.png){ loading=lazy }
+
+该组件作为一个 Pod 运行，并做出供应决策。它的使用方式是开发者用所需的卷参数构建一个请求，选择合适的存储类，并在 YAML 规范上调用 kubelet。OpenEBS PV 动态供应器与`maya-apiserver` 交互，在适当的节点上为卷控制器 Pod 和卷复制 Pod 创建部署规范。可以使用 PVC 规范中的注解来控制容量 Pod（控制器/副本）的调度。
+
+目前，OpenEBS 供应器只支持一种类型的绑定，即 `iSCSI`。
+
+## Maya-ApiServer
+
+![](../../assets/images/maya-apiserver.png){ loading=lazy }
+
+`maya-apiserver` 作为一个 Pod 运行，主要是用来暴露 OpenEBS REST APIs。
+
+`maya-apiserver` 还负责创建创建卷 Pod 所需的部署规范文件，在生成这些规范文件后，它调用 kube-apiserver 来相应地调度Pods。在 OpenEBS PV 供应器的卷供应结束时，会创建一个Kubernetes 对象 PV，并挂载在应用 Pod 上，PV由控制器 Pod 托管，控制器 Pod 由一组位于不同节点的副本 Pod 支持，控制器 Pod和副本 Pod 是数据平面的一部分，。
+
+`maya-apiserver` 的另一个重要任务是卷策略管理。OpenEBS 提供了非常细化的规范来表达策略，m-apiserver 解释这些 YAML 规范，将其转换为可执行的组件，并通过卷管理 sidecar 来执行。
+
+## Maya Volume Exporter
+
+![](../../assets/images/maya-volume-exporter.png){ loading=lazy }
+
+`Maya Volume Exporter` 是每个存储控制器 Pod（cStor/Jiva）的 sidecar。这些 sidecars 将控制平面与数据平面连接起来，以获取统计数据，比如：
+
+- volume 读/写延迟
+- 读/写 IOPS
+- 读/写块大小
+- 容量统计
+- `OpenEBS volume exporter` 数据流
+
+## Volume 管理 Sidecars
+
+Sidecars 还用于将控制器配置参数和卷策略传递给作为数据平面的卷控制器 Pod，以及将副本配置参数和副本数据保护参数传递给卷副本 Pod。
+
+![](../../assets/images/volume-management-sidecar.png){ loading=lazy }
