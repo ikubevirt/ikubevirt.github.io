@@ -176,7 +176,7 @@ spec:
     persistentVolumeClaim:
       claimName: pvc-hostpath
   nodeSelector:
-    kubernetes.io/hostname: ydzs-node1
+    kubernetes.io/hostname: node1
   containers:
   - name: task-pv-container
     image: nginx

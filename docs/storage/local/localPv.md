@@ -31,7 +31,7 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-storage
   local:
-    path: /data/k8s/localpv  # ydzs-node1节点上的目录
+    path: /data/k8s/localpv  # node1节点上的目录
   nodeAffinity:
     required:
       nodeSelectorTerms:
