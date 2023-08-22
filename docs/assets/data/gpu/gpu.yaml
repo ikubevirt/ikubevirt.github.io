@@ -1,0 +1,14 @@
+- title: 术语介绍
+  content: Terminologies
+  image: ../assets/icons/pokemon/028.png
+  url: ./gpu/terminology.md
+
+- title: GPU虚拟化
+  content: GPU Virtualization
+  image: ../assets/icons/pokemon/094.png
+  url: ./gpu/gpuVirt.md
+
+- title: cGPU虚拟化
+  content: cGPU Virtualization
+  image: ../assets/icons/pokemon/134.png
+  url: ./gpu/cgpuVirt.md

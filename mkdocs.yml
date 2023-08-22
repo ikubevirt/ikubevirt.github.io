@@ -227,6 +227,10 @@ nav:
           - 部署安装: storage/ceph/installation.md
   - GPU:
       - gpu/index.md
+      - 快速了解:
+          - 术语介绍: gpu/gpu/terminology.md
+          - GPU虚拟化: gpu/gpu/gpuVirt.md
+          - cGPU虚拟化: gpu/gpu/cgpuVirt.md
   - 网络:
       - network/index.md
   - 监控:
