@@ -1,6 +1,6 @@
 - title: HostPath
   content: HostPath
-  image: ../assets/icons/persephone.png
+  image: ../assets/icons/pokemon/055.png
   url: ./local/hostPath.md
 
 - title: Local PV

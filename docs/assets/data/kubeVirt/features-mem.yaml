@@ -7,3 +7,8 @@
   content: VM Memory Dump
   image: ../assets/icons/hercules.png
   url: ./features/vm-mem-dump.md
+
+- title: 资源超卖
+  content: Over-subscription
+  image: ../assets/icons/persephone.png
+  url: ./features/oversubscription.md
