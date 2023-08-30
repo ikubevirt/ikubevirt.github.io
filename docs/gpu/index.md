@@ -24,3 +24,7 @@ GPU的工作大部分就是这样，计算量大，但没什么技术含量，�
 
 [cards cols="3" image-tags(./docs/assets/data/gpu/gpu.yaml)]
 
+### Operators
+
+[cards cols="3" image-tags(./docs/assets/data/gpu/operator.yaml)]
+
