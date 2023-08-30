@@ -1,3 +1,4 @@
+# VirtualMachineInstancePreset
 
 `VirtualMachineInstancePresets` 是一般 `VirtualMachineInstance` 配置的扩展，其行为与 Kubernetes 中的 `PodPresets` 非常相似。 创建 `VirtualMachineInstance` 时，任何适用的 `VirtualMachineInstancePresets` 将应用于 `VirtualMachineInstance` 的现有规范。 这允许重复使用应用于多个 `VirtualMachineInstances` 的通用设置。
 
