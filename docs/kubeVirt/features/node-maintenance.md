@@ -81,14 +81,16 @@ spec:
 
 如果确定目标节点应再次变得可调度，则必须运行以下命令。
 
-```bash
-kubectl uncordon <节点名称>
-```
-或者在 OKD 的情况下。
+=== "Kubernetes"
 
-```bash
-oc adm uncordon <节点名称>
-```
+    ```bash
+    kubectl uncordon <节点名称>
+    ```
+=== "OKD"
+
+    ```bash
+    oc adm uncordon <节点名称>
+    ```
 
 ## 驱逐后关闭节点
 

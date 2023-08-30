@@ -275,4 +275,4 @@ virtctl start centos7
 
 centOS7 虚拟机启动正常。
 
-![](https://cdn.jsdelivr.net/gh/hyperter96/cloud-native-docs/docs/assets/images/centos7-start.png){ loading=lazy }
+![](../../assets/images/centos7-start.png){ loading=lazy }
