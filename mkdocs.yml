@@ -232,6 +232,11 @@ nav:
           - 术语介绍: gpu/gpu/terminology.md
           - GPU虚拟化: gpu/gpu/gpuVirt.md
           - cGPU虚拟化: gpu/gpu/cgpuVirt.md
+      - Operators:
+          - GPU Operator:
+            - gpu/operators/gpuOperator/index.md
+            - 快速开始: gpu/operators/gpuOperator/get-started.md
+            - 平台支持: gpu/operators/gpuOperator/platform-support.md
   - 网络:
       - network/index.md
   - 监控:

@@ -4,13 +4,13 @@
 
 kubeVirt以CRD的形式将VM管理接口接入到kubernetes中，通过一个pod去使用libvirtd管理VM的方式，实现pod与VM的一一对应，做到如同容器一般去管理虚拟机，并且做到与容器一样的资源管理、调度规划、这一层整体与企业IAAS关系不大，也方便企业的接入，统一纳管。
 
-| 组件                | 描述                                                                                                                                                                                                                                                                                                                                      |
-|:------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `virt-api`        | kubeVirt是以CRD形式去管理VM Pod，`virt-api`就是所有虚拟化操作的入口，这里面包括常规的CDR更新验证、以及`console、vm start、stop`等操作。                                                                                                                                                                                                                                           |
-| `virt-controller` | <li> `virt-controller`会根据vmi CRD，生成对应的`virt-launcher` Pod，并维护CRD的状态。<li> 与kubernetes api-server通讯监控VMI资源的创建删除等状态。                                                                                                                                                                                                                       |
-| `virt-handler`    | <li> `virt-handler`会以daemonset形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。<li> `virt-handler`还会保持集群级别`VMI Spec`与相应libvirt域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足VMI Spec定义的网络和存储要求。                                                                                                                   |
-| `virt-launcher`   | <li> 每个`virt-launcher` pod对应着一个VMI，kubelet只负责`virt-launcher` pod运行状态，不会去关心VMI创建情况。<li> `virt-handler`会根据CRD参数配置去通知`virt-launcher`去使用本地的`libvirtd`实例来启动VMI，随着Pod的生命周期结束，`virt-lanuncher`也会去通知VMI去执行终止操作；<li> 其次在每个`virt-launcher` pod中还对应着一个`libvirtd`，`virt-launcher`通过`libvirtd`去管理VM的生命周期，这样做到去中心化，不再是以前的虚拟机那套做法，一个`libvirtd`去管理多个VM。 |
-| `virtctl`         | kubeVirt自带类似`kubectl`的命令行工具，它是越过`virt-launcher` pod这一层去直接管理VM虚拟机，可以控制VM的`start、stop、restart`。                                                                                                                                                                                                                                           |
+| <div style="width:130px">组件</div> | 描述                                                                                                                                                                                                                                                                                                                                      |
+|:----------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `virt-api`                        | kubeVirt是以CRD形式去管理VM Pod，`virt-api`就是所有虚拟化操作的入口，这里面包括常规的CDR更新验证、以及`console、vm start、stop`等操作。                                                                                                                                                                                                                                           |
+| `virt-controller`                 | <li> `virt-controller`会根据vmi CRD，生成对应的`virt-launcher` Pod，并维护CRD的状态。<li> 与kubernetes api-server通讯监控VMI资源的创建删除等状态。                                                                                                                                                                                                                       |
+| `virt-handler`                    | <li> `virt-handler`会以daemonset形式部署在每一个节点上，负责监控节点上的每个虚拟机实例状态变化，一旦检测到状态的变化，会进行响应并且确保相应的操作能够达到所需（理想）的状态。<li> `virt-handler`还会保持集群级别`VMI Spec`与相应libvirt域之间的同步；报告`libvirt`域状态和集群Spec的变化；调用以节点为中心的插件以满足VMI Spec定义的网络和存储要求。                                                                                                                   |
+| `virt-launcher`                   | <li> 每个`virt-launcher` pod对应着一个VMI，kubelet只负责`virt-launcher` pod运行状态，不会去关心VMI创建情况。<li> `virt-handler`会根据CRD参数配置去通知`virt-launcher`去使用本地的`libvirtd`实例来启动VMI，随着Pod的生命周期结束，`virt-lanuncher`也会去通知VMI去执行终止操作；<li> 其次在每个`virt-launcher` pod中还对应着一个`libvirtd`，`virt-launcher`通过`libvirtd`去管理VM的生命周期，这样做到去中心化，不再是以前的虚拟机那套做法，一个`libvirtd`去管理多个VM。 |
+| `virtctl`                         | kubeVirt自带类似`kubectl`的命令行工具，它是越过`virt-launcher` pod这一层去直接管理VM虚拟机，可以控制VM的`start、stop、restart`。                                                                                                                                                                                                                                           |
 
 ## kubeVirt管理虚拟机机制
 
@@ -27,18 +27,18 @@ kubeVirt以CRD的形式将VM管理接口接入到kubernetes中，通过一个pod
 
 `libvirt`是Hypervisor的管理方案，就是管理Hypervisor的。 
 
-!!! question
+!!! question "疑问"
 
     那Hypervisor到底有哪些呢？
 
 Hypervisor（VMM）虚拟机监视器有以下分类：
 
-|                虚拟机监视器类别                 | 描述                                                                                                                      |
-|:---------------------------------------:|:------------------------------------------------------------------------------------------------------------------------|
-|        Type I hypervisor: 硬件虚拟化         | 这些Hypervisor是直接安装并运行在宿主机上的硬件之上的，Hypervisor运行在硬件之上来控制和管理硬件资源。 比如：<li> `Microsoft Hyper-V` <li> `VMware ESXI` <li>  `KVM` |
-| Typer-II hypervisor: hosted hypervisors | 这些Hypervisor直接作为一种计算机程序运行在宿主机上的操作系统之上的。 比如：<li> `QEMU` <li> `VirtualBox` <li> `VMware Player` <li> `VMware WorkStation` |
-|     虚拟`CPU`，`MEM`（内存），`I/Odevices`      | <li> 其中`Intel VT-x/AMD-X`实现的是`CPU`虚拟化 <li> `Intel EPT/AMD-NPT`实现`MEM`的虚拟化                                               |
-|             `Qemu-Kvm`的结合               | `KVM`只能进行`CPU`，`MEM`的虚拟化，`QEMU`能进行硬件，比如：声卡，USE接口，...的虚拟化，因此通常将`QEMU`，`KVM`结合共同虚拟：`QEMU-KVM`。                            |
+| <div style="width:290px"> 虚拟机监视器类别</div> | 描述                                                                                                                      |
+|:----------------------------------------:|:------------------------------------------------------------------------------------------------------------------------|
+|         Type I hypervisor: 硬件虚拟化         | 这些Hypervisor是直接安装并运行在宿主机上的硬件之上的，Hypervisor运行在硬件之上来控制和管理硬件资源。 比如：<li> `Microsoft Hyper-V` <li> `VMware ESXI` <li>  `KVM` |
+| Typer-II hypervisor: hosted hypervisors  | 这些Hypervisor直接作为一种计算机程序运行在宿主机上的操作系统之上的。 比如：<li> `QEMU` <li> `VirtualBox` <li> `VMware Player` <li> `VMware WorkStation` |
+|      虚拟`CPU`，`MEM`（内存），`I/Odevices`      | <li> 其中`Intel VT-x/AMD-X`实现的是`CPU`虚拟化 <li> `Intel EPT/AMD-NPT`实现`MEM`的虚拟化                                               |
+|              `Qemu-Kvm`的结合               | `KVM`只能进行`CPU`，`MEM`的虚拟化，`QEMU`能进行硬件，比如：声卡，USE接口，...的虚拟化，因此通常将`QEMU`，`KVM`结合共同虚拟：`QEMU-KVM`。                            |
 
 我们通过`libvirt`命令行工具，来调动Hypervisor，从而使Hypervisor管理虚拟机。
 
