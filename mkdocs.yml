@@ -187,6 +187,7 @@ nav:
           - 内存管理:
             - 内核同页合并: kubeVirt/features/ksm.md
             - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
+            - 资源超卖: kubeVirt/features/oversubscription.md
           - 构建管理:
             - Tekton:
               - kubeVirt/features/tekton/index.md

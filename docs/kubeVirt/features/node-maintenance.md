@@ -94,3 +94,16 @@ oc adm uncordon <节点名称>
 
 从 KubeVirt 的角度来看，一旦所有 VirtualMachineInstances 从节点中被逐出，该节点就可以安全关闭。 在多用途集群中，VirtualMachineInstances 与其他容器化工作负载一起调度，集群管理员需要确保在关闭节点电源之前所有其他 Pod 已被安全驱逐。
 
+## 虚拟机驱逐
+
+驱逐设置为 `running=true` 的 VirtualMachine 所拥有的任何 VirtualMachineInstance 将导致 VirtualMachineInstance 被重新调度到另一个节点。
+
+在这种情况下，VirtualMachineInstance 将被迫关闭电源并在另一个节点上重新启动。 未来一旦 KubeVirt 引入实时迁移支持，虚拟机将能够在驱逐期间无缝迁移到另一个节点。
+
+### vmirs 驱逐行为
+
+驱逐 VirtualMachineInstanceReplicaSet 拥有的 VirtualMachineInstance 将导致 VirtualMachineInstanceReplicaSet 在集群中的其他节点上调度替换被驱逐的 VirtualMachineInstance。
+
+### vmi 驱逐行为
+
+不受 VirtualMachineInstanceReplicaSet 或 VirtualMachine 对象支持的 VirtualMachineInstance 在驱逐后不会被重新调度。
