@@ -76,6 +76,32 @@ theme:
 
 # Plugins
 plugins:
+  - blogging:
+      locale: zh_CN
+      dirs: # The directories to be included
+        - blog/posts
+#      full_content: true # Use the full content for blog description
+      size: 5            # Number of articles in one page, default: 10
+      sort:
+        from: new        # Sort from new to old, default
+        # or old         # Sort from old to new
+        by: creation     # Sort by the first commit time, default
+        # or revision    # Sort by the latest commit time
+      paging: true      # Disable paging
+      show_total: true  # Remove 'total pages' label
+      template: material/.overrides/blog-button-theme.html
+      theme:
+        name: card
+        options: # Optional
+          # `true` if display the button as plain text
+          # `false` or not present if display as rectangle button
+          plain_button: true
+          # Replacement for 'Continue Reading'
+          label: 继续阅读
+      features:
+        tags:
+          index_page: blog/tags.md
+          insert: top
   - mike:
       version_selector: false
       canonical_version: null
@@ -84,10 +110,8 @@ plugins:
       type: timeago
       fallback_to_build_date: true
   - search:
-      separator: '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-      lang:
-        - en
-        - zh
+      separator: '[\s\u200b\-]' # '[\s\u200b\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang: zh
   - minify:
       minify_html: true
 
@@ -170,6 +194,8 @@ nav:
               - vm资源: kubeVirt/resource/virtualMachine.md
               - vmPool资源: kubeVirt/resource/virtualMachinePool.md
               - vmi资源: kubeVirt/resource/virtualMachineInstance.md
+              - vmiType资源: kubeVirt/resource/virtualMachineInstancetype.md
+              - vmPreference资源: kubeVirt/resource/virtualMachinePreference.md
               - vmirs资源: kubeVirt/resource/virtualMachineInstanceReplicaSet.md
               - vmiPreset资源: kubeVirt/resource/virtualMachineInstancePreset.md
               - vmExport资源: kubeVirt/resource/virtualMachineExport.md
@@ -184,10 +210,12 @@ nav:
             - 节点分配: kubeVirt/features/node-assignment.md
             - 节点维护: kubeVirt/features/node-maintenance.md
             - 节点过度使用管理: kubeVirt/features/node-overcommit.md
-          - 内存管理:
+          - 内存/CPU管理:
             - 内核同页合并: kubeVirt/features/ksm.md
             - 虚拟机内存转储: kubeVirt/features/vm-mem-dump.md
             - 资源超卖: kubeVirt/features/oversubscription.md
+            - 专用CPU资源: kubeVirt/features/dedicated-cpu-resources.md
+            - 大页内存: kubeVirt/features/hugepages.md
           - 构建管理:
             - Tekton:
               - kubeVirt/features/tekton/index.md
@@ -211,7 +239,8 @@ nav:
           - DIC资源: cdi/resource/dataImportCron.md
           - 对象传输资源: cdi/resource/objectTransfer.md
       - 特性功能:
-          - 热插拔卷: cdi/features/hotplug-volume.md
+          - 卷管理:
+            - 热插拔卷: cdi/features/hotplug-volume.md
   - 存储:
       - storage/index.md
       - Local本地存储:
@@ -241,5 +270,8 @@ nav:
       - network/index.md
   - 监控:
       - monitor/index.md
+  - 博客:
+      - blog/index.md
+      - 标签: blog/tags.md
   - 关于:
       - about.md

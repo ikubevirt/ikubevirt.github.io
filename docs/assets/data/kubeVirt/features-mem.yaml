@@ -12,3 +12,13 @@
   content: Over-subscription
   image: ../assets/icons/persephone.png
   url: ./features/oversubscription.md
+
+- title: 专用CPU资源
+  content: Dedicated CPU Resources
+  image: ../assets/icons/pyre.png
+  url: ./features/dedicated-cpu-resources.md
+
+- title: 大页内存
+  content: Hugepages
+  image: ../assets/icons/sphinx.png
+  url: ./features/hugepages.md

@@ -1,0 +1,15 @@
+{% if render_tags is not defined %}
+{% from "blog-tags-render.html" import render_tags %}
+{% endif %}
+
+{% if get_tags_style is not defined %}
+{% from "blog-tags-render.html" import get_tags_style %}
+{% endif %}
+
+<div class="md-typeset">
+    {% call render_tags(tags, index_url) -%}
+    {% endcall %}
+</div>
+
+{% call get_tags_style() -%}
+{% endcall %}

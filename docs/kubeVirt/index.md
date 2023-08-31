@@ -37,7 +37,7 @@ kubeVirt具备以下特性功能：
 
 [cards cols="3" image-tags(./docs/assets/data/kubeVirt/features-node.yaml)]
 
-#### 内存管理
+#### 内存/CPU管理
 
 [cards cols="3" image-tags(./docs/assets/data/kubeVirt/features-mem.yaml)]
 

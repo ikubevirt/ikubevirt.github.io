@@ -37,15 +37,31 @@ spec:
 
 用户可以通过命令行在HCO CR中启用 `deployTektonTaskResources` 特性门控：
 
-```bash linenums="1"
-oc patch hco kubevirt-hyperconverged  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
-```
+=== "Kubernetes"
+
+    ```bash linenums="1"
+    kubectl patch hco kubevirt-hyperconverged  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
+    ```
+
+=== "OKD"
+
+    ```bash linenums="1"
+    oc patch hco kubevirt-hyperconverged  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
+    ```
 
 或者通过patch给SSP CR打补丁，
 
-```bash linenums="1"
-oc patch ssp ssp  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
-```
+=== "Kubernetes"
+
+    ```bash linenums="1"
+    kubectl patch ssp ssp  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
+    ```
+
+=== "OKD"
+
+    ```bash linenums="1"
+    oc patch ssp ssp  --type=merge -p '{"spec":{"featureGates": {"deployTektonTaskResources": true}}}'
+    ```
 
 一旦特性门控`spec.featureGates.deployTektonTaskResources`被置为`true`时，SSP将不会删除任何任务和示例CI，就算是特性门控回置成`false`。
 

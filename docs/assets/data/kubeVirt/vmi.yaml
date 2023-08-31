@@ -13,6 +13,16 @@
   image: ../assets/icons/poseidon.png
   url: ./resource/virtualMachineInstance.md
 
+- title: vmiType资源
+  content: VirtualMachineInstancetype
+  image: ../assets/icons/perseus.png
+  url: ./resource/virtualMachineInstancetype.md
+
+- title: vmPreference资源
+  content: VirtualMachinePreference
+  image: ../assets/icons/statue.png
+  url: ./resource/virtualMachinePreference.md
+
 - title: vmirs资源
   content: VirtualMachineInstanceReplicaSet
   image: ../assets/icons/artemis.png

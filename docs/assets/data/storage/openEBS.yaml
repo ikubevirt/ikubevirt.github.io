@@ -1,14 +1,14 @@
 - title: 控制平面
   content: Control Plane
-  image: ../assets/icons/statue.png
+  image: ../assets/icons/pokemon/196.png
   url: ./openEBS/control-plane.md
 
 - title: 数据平面
   content: Data Plane
-  image: ../assets/icons/pyre.png
+  image: ../assets/icons/pokemon/197.png
   url: ./openEBS/data-plane.md
 
 - title: 节点磁盘管理器
   content: Node Disk Manager
-  image: ../assets/icons/sphinx.png
+  image: ../assets/icons/pokemon/150.png
   url: ./openEBS/node-disk-manager.md
