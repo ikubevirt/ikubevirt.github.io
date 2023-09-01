@@ -57,3 +57,8 @@
   content: VirtualMachineRestore
   image: ../assets/icons/pegasusHorse.png
   url: ./resource/virtualMachineRestore.md
+
+- title: vmClone资源
+  content: VirtualMachineClone
+  image: ../assets/icons/themis.png
+  url: ./resource/virtualMachineClone.md

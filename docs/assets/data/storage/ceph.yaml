@@ -1,6 +1,6 @@
 - title: 架构和组件
   content: Infrastructure and Components
-  image: ../assets/icons/themis.png
+  image: ../assets/icons/pokemon/297.png
   url: ./ceph/infrastructure.md
 
 - title: 块存储
