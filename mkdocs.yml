@@ -269,6 +269,15 @@ nav:
             - 平台支持: gpu/operators/gpuOperator/platform-support.md
   - 网络:
       - network/index.md
+      - 多租户网络:
+          - Kube-OVN:
+            - network/kube-ovn/index.md
+          - Multus多网卡插件:
+            - network/multus/index.md
+          - DPDK:
+            - network/dpdk/index.md
+          - SR-IOV:
+            - network/sr-iov/index.md
   - 监控:
       - monitor/index.md
   - 博客:

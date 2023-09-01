@@ -14,9 +14,9 @@ kubeVirt 还提供了两个基于偏好的 CRD，同样是集群范围的 `Virtu
         preferredInterfaceModel: virtio
     ```
 
-与Instancetypes不同，首选项仅代表首选值，因此它们可以被用户提供的 VirtualMachine 中的值覆盖。
+与Instancetypes不同，首选项仅代表首选值，因此它们可以被用户提供的 `VirtualMachine` 中的值覆盖。
 
-在下面所示的示例中，用户提供了一个带有已在 `DiskTarget` 中定义的磁盘总线的 VirtualMachine，并且还使用 `DevicePreference` 和 `PreferredDiskBus` 选择了一组首选项，因此使用用户在 VirtualMachine 和 `DiskTarget` 中的原始选择：
+在下面所示的示例中，用户提供了一个带有已在 `DiskTarget` 中定义的磁盘总线的 `VirtualMachine`，并且还使用 `DevicePreference` 和 `PreferredDiskBus` 选择了一组首选项，因此使用用户在 `VirtualMachine` 和 `DiskTarget` 中的原始选择：
 
 ```yaml linenums="1" title="vmPref.yaml"
 ---

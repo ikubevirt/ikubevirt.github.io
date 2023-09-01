@@ -8,9 +8,9 @@
 
 必须在特性门控中启用 `VMExport` 支持才能可用。 KubeVirt CR 中的`feature gates`字段必须通过添加 `VMExport` 来扩展。
 
-## Export 令牌
+## Export token
 
-为了安全地导出虚拟机磁盘，您必须创建一个用于授权用户访问导出端点的令牌。 此令牌必须与虚拟机位于同一命名空间中。 密钥的内容可以作为令牌标头或参数传递到导出 URL。 标头或参数的名称是 `x-kubevirt-export-token`，其值与密钥的内容匹配。 该秘密可以命名为命名空间中的任何有效秘密。 我们建议您生成至少 12 个字符的字母数字标记。 数据密钥应该是`token`。 例如：
+为了安全地导出虚拟机磁盘，您必须创建一个用于授权用户访问导出端点的`token`。 此令牌必须与虚拟机位于同一命名空间中。 密钥的内容可以作为`token`标头或参数传递到导出 URL。 标头或参数的名称是 `x-kubevirt-export-token`，其值与密钥的内容匹配。 该秘密可以命名为命名空间中的任何有效秘密。 我们建议您生成至少 12 个字符的字母数字标记。 数据密钥应该是`token`。 例如：
 
 ```yaml linenums="1"
 apiVersion: v1
@@ -23,7 +23,7 @@ stringData:
 
 ## 导出虚拟机卷
 
-创建令牌后，您现在可以创建一个 VMExport CR 来标识要导出的虚拟机。 您可以创建如下所示的 `VMExport`：
+创建`token`后，您现在可以创建一个 VMExport CR 来标识要导出的虚拟机。 您可以创建如下所示的 `VMExport`：
 
 ```yaml linenums="1"
 apiVersion: export.kubevirt.io/v1alpha1
@@ -88,4 +88,4 @@ spec:
 
 ## 导出状态链接
 
-VirtualMachineExport CR 将包含带有导出服务的内部和外部链接的状态。 内部链接仅在集群内部有效，外部链接仅对通过 Ingress 或 Route 的外部访问有效。 `cert` 字段将包含签署内部链接导出服务器证书的 CA，或签署路由或入口的 CA。
+`VirtualMachineExport` CR 将包含带有导出服务的内部和外部链接的状态。 内部链接仅在集群内部有效，外部链接仅对通过 Ingress 或 Route 的外部访问有效。 `cert` 字段将包含签署内部链接导出服务器证书的 CA，或签署路由或入口的 CA。

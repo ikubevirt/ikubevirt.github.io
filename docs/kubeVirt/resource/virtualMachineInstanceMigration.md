@@ -34,6 +34,6 @@
 
 ## 流程分析
 
-我们假设现在有一个running的kvm（即存在一个running状态的vmi和pod），此时apply一个`VirtualMachineInstanceMigration`会发生什么：
+我们假设现在有一个running的kvm（即存在一个`running`状态的vmi和pod），此时apply一个`VirtualMachineInstanceMigration`会发生什么：
 
 ![](../../assets/images/vm-migration-flow.png){ loading=lazy }

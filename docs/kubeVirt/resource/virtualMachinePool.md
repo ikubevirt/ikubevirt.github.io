@@ -2,7 +2,7 @@
 
 ## 什么是 VirtualMachinePool
 
-!!! note "VirtualMachinePool定义"
+!!! info "VirtualMachinePool定义"
 
     VirtualMachinePool 尝试确保指定数量的 VirtualMachine 副本及其各自的 VirtualMachineInstance 随时处于就绪状态。 换句话说，VirtualMachinePool 可确保一个 VirtualMachine 或一组 VirtualMachine 始终处于启动状态并准备就绪。
 
@@ -24,7 +24,7 @@ VirtualMachinePool 允许我们在`spec.virtualMachineTemplate` 中指定`Virtua
 
 ### 创建 VirtualMachinePool
 
-VirtualMachinePool 是 Kubevirt API `pool.kubevirt.io/v1alpha1` 的一部分。以下是创建VirtualMachinePool的示例，
+`VirtualMachinePool` 是 Kubevirt API `pool.kubevirt.io/v1alpha1` 的一部分。以下是创建`VirtualMachinePool`的示例，
 
 //// collapse-code
 ```yaml title="vm-pool-cirros.yaml"
@@ -149,7 +149,7 @@ Events:
 
 ### 通过 Scale Subresource 伸缩
 
-VirtualMachinePool 支持Scale Subresource。 因此，可以通过 kubectl 对其进行伸缩。
+`VirtualMachinePool` 支持Scale Subresource。 因此，可以通过 `kubectl` 对其进行伸缩。
 
 ```bash linenums="1"
 $ kubectl scale vmpool vm-pool-cirros --replicas 5
@@ -157,7 +157,7 @@ $ kubectl scale vmpool vm-pool-cirros --replicas 5
 
 ### 从 VirtualMachinePool 中删除 VirtualMachine
 
-从 VirtualMachinePool 中删除 VirtualMachine这种情况下，需要从虚拟机中删除ownerReferences。 这可以通过使用 `kubectl edit` 或 `kubectl patch` 来实现。 使用 `kubectl` 补丁，如下：
+从 `VirtualMachinePool` 中删除 `VirtualMachine`这种情况下，需要从虚拟机中删除`ownerReferences`。 这可以通过使用 `kubectl edit` 或 `kubectl patch` 来实现。 使用 `kubectl` 补丁，如下：
 
 ```bash linenums="1"
 kubectl patch vm vm-pool-cirros-0 --type merge --patch '{"metadata":{"ownerReferences":null}}'
@@ -170,7 +170,7 @@ kubectl patch vm vm-pool-cirros-0 --type merge --patch '{"metadata":{"ownerRefer
 
 ### HPA使用
 
-HorizontalPodAutoscaler (HPA) 可以与 VirtualMachinePool 一起使用。 只需在`Spec`中引用它即可：
+HorizontalPodAutoscaler (HPA) 可以与 `VirtualMachinePool` 一起使用。 只需在`Spec`中引用它即可：
 
 ```yaml linenums="1"
 apiVersion: autoscaling/v1
@@ -188,7 +188,7 @@ spec:
   targetCPUUtilizationPercentage: 50
 ```
 
-或者使用 kubectl autoscale 通过命令行定义 HPA：
+或者使用 `kubectl autoscale` 通过命令行定义 HPA：
 
 ```bash linenums="1"
 $ kubectl autoscale vmpool vm-pool-cirros --min=3 --max=10 --cpu-percent=50
@@ -196,9 +196,9 @@ $ kubectl autoscale vmpool vm-pool-cirros --min=3 --max=10 --cpu-percent=50
 
 ## 将 VirtualMachinePool 作为服务暴露
 
-VirtualMachinePool 可以作为服务暴露。 完成此操作后，将选择一个虚拟机副本来实际交付服务。
+`VirtualMachinePool` 可以作为服务暴露。 完成此操作后，将选择一个虚拟机副本来实际交付服务。
 
-例如，将 SSH 端口 (22) 暴露为 ClusterIP 服务：
+例如，将 `SSH` 端口 (22) 暴露为 `ClusterIP` 服务：
 
 ```yaml linenums="1" title="vm-pool-cirros-ssh.yaml"
 apiVersion: v1
@@ -215,7 +215,7 @@ spec:
       targetPort: 22
 ```
 
-将此清单保存到 `vm-pool-cirros-ssh.yaml` 并将其提交到 Kubernetes 将创建侦听端口 2222 并转发到端口 22 的 ClusterIP 服务。
+将此清单保存到 `vm-pool-cirros-ssh.yaml` 并将其提交到 Kubernetes 将创建侦听端口 2222 并转发到端口 22 的 `ClusterIP` 服务。
 
 有关更多详细信息，请参阅服务对象。
 
