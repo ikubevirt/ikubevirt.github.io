@@ -1,0 +1,9 @@
+- title: 静态IP地址
+  content: Fixed IP Address
+  image: ../../../assets/icons/pokemon/068.png
+  url: ./features/fixed-ip-address.md
+
+- title: 子网配置
+  content: Subnet
+  image: ../../../assets/icons/pokemon/078.png
+  url: ./features/subnet.md

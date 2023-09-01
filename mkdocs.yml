@@ -269,9 +269,11 @@ nav:
             - 平台支持: gpu/operators/gpuOperator/platform-support.md
   - 网络:
       - network/index.md
-      - 多租户网络:
+      - 网络开发策略:
           - Kube-OVN:
             - network/kube-ovn/index.md
+            - 静态IP地址: network/kube-ovn/features/fixed-ip-address.md
+            - 子网配置: network/kube-ovn/features/subnet.md
           - Multus多网卡插件:
             - network/multus/index.md
           - DPDK:
