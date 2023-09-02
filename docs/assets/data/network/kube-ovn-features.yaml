@@ -23,6 +23,16 @@
   image: ../../assets/icons/pokemon/462.png
   url: ./features/vpc-qos.md
 
+- title: VPC互联
+  content: VPC Peering
+  image: ../../assets/icons/pokemon/609.png
+  url: ./features/vpc-peering.md
+
+- title: 容器网络QoS配置
+  content: Manage QoS
+  image: ../../assets/icons/pokemon/384.png
+  url: ./features/container-network-qos.md
+
 - title: LB类型Service
   content: LoadBalancer Service
   image: ../../assets/icons/pokemon/526.png
@@ -32,3 +42,18 @@
   content: EIP and SNAT
   image: ../../assets/icons/pokemon/623.png
   url: ./features/eip-snat.md
+
+- title: 安全组配置
+  content: SecurityGroup
+  image: ../../assets/icons/pokemon/476.png
+  url: ./features/securityGroup.md
+
+- title: VIP预留配置
+  content: VIP Reservation
+  image: ../../assets/icons/pokemon/591.png
+  url: ./features/vip-reservation.md
+
+- title: DHCP配置
+  content: DHCP
+  image: ../../assets/icons/pokemon/637.png
+  url: ./features/dhcp.md
