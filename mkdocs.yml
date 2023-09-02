@@ -65,8 +65,8 @@ theme:
         icon: material/toggle-switch
         name: Switch to dark mode
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
@@ -274,6 +274,11 @@ nav:
             - network/kube-ovn/index.md
             - 静态IP地址: network/kube-ovn/features/fixed-ip-address.md
             - 子网配置: network/kube-ovn/features/subnet.md
+            - IP池配置: network/kube-ovn/features/ip-pool.md
+            - VPC配置: network/kube-ovn/features/vpc.md
+            - VPC QOS配置: network/kube-ovn/features/vpc-qos.md
+            - LB类型Service: network/kube-ovn/features/lb-service.md
+            - EIP和SNAT配置: network/kube-ovn/features/eip-snat.md
           - Multus多网卡插件:
             - network/multus/index.md
           - DPDK:

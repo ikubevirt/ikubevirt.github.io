@@ -1,9 +1,34 @@
 - title: 静态IP地址
   content: Fixed IP Address
-  image: ../../../assets/icons/pokemon/068.png
+  image: ../../assets/icons/pokemon/068.png
   url: ./features/fixed-ip-address.md
 
 - title: 子网配置
   content: Subnet
-  image: ../../../assets/icons/pokemon/078.png
+  image: ../../assets/icons/pokemon/078.png
   url: ./features/subnet.md
+
+- title: IP池配置
+  content: IP Pool
+  image: ../../assets/icons/pokemon/279.png
+  url: ./features/ip-pool.md
+
+- title: VPC配置
+  content: VPC
+  image: ../../assets/icons/pokemon/362.png
+  url: ./features/vpc.md
+
+- title: VPC QoS配置
+  content: VPC QoS
+  image: ../../assets/icons/pokemon/462.png
+  url: ./features/vpc-qos.md
+
+- title: LB类型Service
+  content: LoadBalancer Service
+  image: ../../assets/icons/pokemon/526.png
+  url: ./features/lb-service.md
+
+- title: EIP和SNAT配置
+  content: EIP and SNAT
+  image: ../../assets/icons/pokemon/623.png
+  url: ./features/eip-snat.md

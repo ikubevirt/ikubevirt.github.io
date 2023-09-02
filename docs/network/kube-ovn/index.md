@@ -6,7 +6,7 @@ Kube-OVN 是一款 CNCF 旗下的企业级云原生网络编排系统，将 SDN 
 
 如果你怀念 SDN 领域丰富的网络能力却在云原生领域苦苦追寻而不得，那么 Kube-OVN 将是你的最佳选择。
 
-借助 OVS/OVN 在 SDN 领域成熟的能力，Kube-OVN 将网络虚拟化的丰富功能带入云原生领域。目前已支持子网管理， 静态 IP 分配，分布式/集中式网关，Underlay/Overlay 混合网络， VPC 多租户网络，跨集群互联网络，QoS 管理， 多网卡管理，ACL 网络控制，流量镜像，ARM 支持， Windows 支持等诸多功能。
+借助 OVS/OVN 在 SDN 领域成熟的能力，Kube-OVN 将网络虚拟化的丰富功能带入云原生领域。目前已支持[子网管理](./features/subnet.md)， [静态 IP 分配](./features/fixed-ip-address.md)，[分布式/集中式网关](./features/subnet.md/#overlay)，Underlay/Overlay 混合网络， [VPC 多租户网络](./features/vpc.md)，跨集群互联网络，[QoS 管理](./features/vpc-qos.md)， 多网卡管理，ACL 网络控制，流量镜像，ARM 支持， Windows 支持等诸多功能。
 
 部分特性功能如下:
 
