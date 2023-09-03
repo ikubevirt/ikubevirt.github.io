@@ -28,6 +28,11 @@
   image: ../../assets/icons/pokemon/609.png
   url: ./features/vpc-peering.md
 
+- title: 多集群互联
+  content: Cluster Inter-connection
+  image: ../../assets/icons/pokemon/445.png
+  url: ./features/cluster-inter-connection.md
+
 - title: 容器网络QoS配置
   content: Manage QoS
   image: ../../assets/icons/pokemon/384.png

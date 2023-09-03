@@ -278,6 +278,7 @@ nav:
             - VPC配置: network/kube-ovn/features/vpc.md
             - VPC QOS配置: network/kube-ovn/features/vpc-qos.md
             - VPC互联: network/kube-ovn/features/vpc-peering.md
+            - 多集群互联: network/kube-ovn/features/cluster-inter-connection.md
             - 容器网络QoS配置: network/kube-ovn/features/container-network-qos.md
             - LB类型Service: network/kube-ovn/features/lb-service.md
             - EIP和SNAT配置: network/kube-ovn/features/eip-snat.md
