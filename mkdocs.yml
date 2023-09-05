@@ -293,6 +293,13 @@ nav:
             - network/sr-iov/index.md
   - 监控:
       - monitor/index.md
+  - 边缘计算:
+      - edge-computing/index.md
+      - 快速了解:
+          - 历史背景: edge-computing/get-started/background.md
+      - 开源项目:
+          - KubeEdge:
+            - edge-computing/kubeEdge/index.md
   - 博客:
       - blog/index.md
       - 标签: blog/tags.md

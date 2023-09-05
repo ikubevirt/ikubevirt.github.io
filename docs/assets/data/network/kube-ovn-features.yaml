@@ -25,12 +25,12 @@
 
 - title: VPC互联
   content: VPC Peering
-  image: ../../assets/icons/pokemon/609.png
+  image: ../../assets/icons/pokemon/chandelure.gif
   url: ./features/vpc-peering.md
 
 - title: 多集群互联
   content: Cluster Inter-connection
-  image: ../../assets/icons/pokemon/445.png
+  image: ../../assets/icons/pokemon/garchomp.gif
   url: ./features/cluster-inter-connection.md
 
 - title: 容器网络QoS配置
