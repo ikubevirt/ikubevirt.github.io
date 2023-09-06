@@ -248,9 +248,15 @@ nav:
           - HostPath: storage/local/hostPath.md
           - Local PV: storage/local/localPv.md
       - OpenEBS存储:
-          - 控制平面: storage/openEBS/control-plane.md
-          - 数据平面: storage/openEBS/data-plane.md
-          - 节点磁盘管理器: storage/openEBS/node-disk-manager.md
+          - 存储组件:
+            - 控制平面: storage/openEBS/control-plane.md
+            - 数据平面: storage/openEBS/data-plane.md
+            - 节点磁盘管理器: storage/openEBS/node-disk-manager.md
+          - 特性功能:
+            - 容器附加存储: storage/openEBS/cas.md
+            - 同步复制: storage/openEBS/sync-replication.md
+            - 快照克隆: storage/openEBS/snapshot-clone.md
+            - 备份恢复: storage/openEBS/backup-restore.md
           - 部署安装: storage/openEBS/installation.md
       - Ceph存储:
           - 架构和组件: storage/ceph/infrastructure.md

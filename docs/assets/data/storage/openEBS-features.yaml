@@ -1,0 +1,19 @@
+- title: 容器附加存储
+  content: Container Attached Storage
+  image: ../assets/icons/pokemon/arcanine.gif
+  url: ./openEBS/cas.md
+
+- title: 同步复制
+  content: Synchronous Replication
+  image: ../assets/icons/pokemon/banette.gif
+  url: ./openEBS/sync-replication.md
+
+- title: 快照克隆
+  content: Snapshot and Clone
+  image: ../assets/icons/pokemon/373.png
+  url: ./openEBS/snapshot-clone.md
+
+- title: 备份恢复
+  content: Backup and Restore
+  image: ../assets/icons/pokemon/377.png
+  url: ./openEBS/backup-restore.md
