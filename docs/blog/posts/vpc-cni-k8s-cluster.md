@@ -46,8 +46,8 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
 
 ### cmdAdd
 
-  代码路径: `cmd/routed-eni-cni-plugin/cni.go`
-  ```go
+  //// collapse-code
+  ```go title="cmd/routed-eni-cni-plugin/cni.go"
   func cmdAdd(args *skel.CmdArgs) error {
     return add(args, typeswrapper.New(), grpcwrapper.New(), rpcwrapper.New(), driver.New())
   }
@@ -106,6 +106,8 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
   }
 
   ```
+  ////
+
   总结:cni 通过 grpc 请求`ipamd`服务获取 ip,拿到 ip 后调用 driver 模块设置 pod 的网络环境。
 
 
@@ -113,6 +115,7 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
 
   释放 pod ip 并清理 pod 的网络环境
 
+  //// collapse-code
   ```go
   func cmdDel(args *skel.CmdArgs) error {
 	return del(args, typeswrapper.New(), grpcwrapper.New(), rpcwrapper.New(), driver.New())
@@ -159,6 +162,7 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
   }
   
   ```
+  ////
   
 ## Driver
 
@@ -175,7 +179,8 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
   该函数主要功能是配置 pod 网络栈,包括准备 pod 的网络环境和策略路由的配置
 
   在 `aws-cni` 网络模型中，节点上的每一个`ENI`都会生成相应的路由表来转发`from-pod`的流量;通过策略路由方式，让`to-pod`的流量优先走主路由表，而对于`from-pod`的流量则走`ENI`对应的路由表，所以在配置 pod 网络环境中有配置策略路由的过程
-
+  
+  //// collapse-code
   ```go
   func (os *linuxNetwork) SetupNS(hostVethName string, contVethName string, netnsPath string, addr *net.IPNet, deviceNumber int, vpcCIDRs []string, useExternalSNAT bool, mtu int, log logger.Logger) error {
     log.Debugf("SetupNS: hostVethName=%s, contVethName=%s, netnsPath=%s, deviceNumber=%d, mtu=%d", hostVethName, contVethName, netnsPath, deviceNumber, mtu)
@@ -221,6 +226,7 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
   }
 
   ```
+  ////
   
   最终实现的效果：
 
@@ -236,6 +242,7 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
 
   `createVethPairContext` 结构体包含了创建`vethpair`所需参数，`run` 方法其实是`setupVeth`函数的具体实现，包含了创建`vethpair`,启用`vethpir`、配置 pod 网关、路由等步骤
 
+  //// collapse-code
   ```go
   func newCreateVethPairContext(contVethName string, hostVethName string, addr *net.IPNet, mtu int) *createVethPairContext {
     return &createVethPairContext{
@@ -318,6 +325,7 @@ Worker节点启动的时候挂载多个虚拟网卡ENI(`Elastic Netowrk Interfac
     return nil
   }
   ```
+  ////
   
 ### TeardownNS
 
