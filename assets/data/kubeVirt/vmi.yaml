@@ -1,0 +1,64 @@
+- title: vm资源
+  content: VirtualMachine
+  image: ../assets/icons/zeus.png
+  url: ./resource/virtualMachine.md
+
+- title: vmPool资源
+  content: VirtualMachinePool
+  image: ../assets/icons/athena.png
+  url: ./resource/virtualMachinePool.md
+
+- title: vmi资源
+  content: VirtualMachineInstance
+  image: ../assets/icons/poseidon.png
+  url: ./resource/virtualMachineInstance.md
+
+- title: vmiType资源
+  content: VirtualMachineInstancetype
+  image: ../assets/icons/perseus.png
+  url: ./resource/virtualMachineInstancetype.md
+
+- title: vmPreference资源
+  content: VirtualMachinePreference
+  image: ../assets/icons/statue.png
+  url: ./resource/virtualMachinePreference.md
+
+- title: vmirs资源
+  content: VirtualMachineInstanceReplicaSet
+  image: ../assets/icons/artemis.png
+  url: ./resource/virtualMachineInstanceReplicaSet.md
+
+- title: vmiPreset资源
+  content: VirtualMachineInstancePreset
+  image: ../assets/icons/demeter.png
+  url: ./resource/virtualMachineInstancePreset.md
+
+- title: vmExport资源
+  content: VirtualMachineExport
+  image: ../assets/icons/dionysus.png
+  url: ./resource/virtualMachineExport.md
+
+- title: vmiMigration资源
+  content: VirtualMachineInstanceMigration
+  image: ../assets/icons/hera.png
+  url: ./resource/virtualMachineInstanceMigration.md
+
+- title: migrationPolicy资源
+  content: MigrationPolicy
+  image: ../assets/icons/aphrodite.png
+  url: ./resource/migrationPolicy.md
+
+- title: vmSnapshot资源
+  content: VirtualMachineSnapshot
+  image: ../assets/icons/atlas.png
+  url: ./resource/virtualMachineSnapshot.md
+
+- title: vmRestore资源
+  content: VirtualMachineRestore
+  image: ../assets/icons/pegasusHorse.png
+  url: ./resource/virtualMachineRestore.md
+
+- title: vmClone资源
+  content: VirtualMachineClone
+  image: ../assets/icons/themis.png
+  url: ./resource/virtualMachineClone.md

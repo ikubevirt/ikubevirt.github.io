@@ -1,0 +1,15 @@
+- title: 节点分配
+  content: Node Assignment
+  image: ../assets/icons/hermes.png
+  url: ./features/node-assignment.md
+
+- title: 节点维护
+  content: Node Maintenance
+  image: ../assets/icons/horn.png
+  url: ./features/node-maintenance.md
+
+- title: 节点过度使用管理
+  content: Node Overcommit
+  image: ../assets/icons/lightning.png
+  url: ./features/node-overcommit.md
+

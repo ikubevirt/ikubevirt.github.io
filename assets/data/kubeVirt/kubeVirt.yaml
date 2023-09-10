@@ -1,0 +1,9 @@
+- title: 架构和生命周期管理
+  content: Infrastructure and Lifecycle
+  image: ../assets/icons/apollo.png
+  url: ./kubeVirt/quick-learn.md
+
+- title: 虚拟机部署实战
+  content: VM Deployment Practice
+  image: ../assets/icons/ares.png
+  url: ./kubeVirt/quick-deploy.md

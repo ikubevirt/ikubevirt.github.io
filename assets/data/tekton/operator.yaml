@@ -1,0 +1,9 @@
+- title: HCO
+  content: HyperConverged Cluster Operator
+  image: ../../../assets/icons/hades.png
+  url: ../../operators/hyperConverged-cluster-operator.md
+
+- title: SSP
+  content: SSP Operator
+  image: ../../../assets/icons/hephaestus.png
+  url: ../../operators/ssp-operator.md

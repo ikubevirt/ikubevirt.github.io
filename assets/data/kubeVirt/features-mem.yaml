@@ -1,0 +1,24 @@
+- title: 内核同页合并
+  content: Kernel Same-page Merging
+  image: ../assets/icons/centaur.png
+  url: ./features/ksm.md
+
+- title: 虚拟机内存转储
+  content: VM Memory Dump
+  image: ../assets/icons/hercules.png
+  url: ./features/vm-mem-dump.md
+
+- title: 资源超卖
+  content: Over-subscription
+  image: ../assets/icons/persephone.png
+  url: ./features/oversubscription.md
+
+- title: 专用CPU资源
+  content: Dedicated CPU Resources
+  image: ../assets/icons/pyre.png
+  url: ./features/dedicated-cpu-resources.md
+
+- title: 大页内存
+  content: Hugepages
+  image: ../assets/icons/sphinx.png
+  url: ./features/hugepages.md

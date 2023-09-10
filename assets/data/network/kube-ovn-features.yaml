@@ -1,0 +1,64 @@
+- title: 静态IP地址
+  content: Fixed IP Address
+  image: ../../assets/icons/pokemon/068.png
+  url: ./features/fixed-ip-address.md
+
+- title: 子网配置
+  content: Subnet
+  image: ../../assets/icons/pokemon/078.png
+  url: ./features/subnet.md
+
+- title: IP池配置
+  content: IP Pool
+  image: ../../assets/icons/pokemon/279.png
+  url: ./features/ip-pool.md
+
+- title: VPC配置
+  content: VPC
+  image: ../../assets/icons/pokemon/362.png
+  url: ./features/vpc.md
+
+- title: VPC QoS配置
+  content: VPC QoS
+  image: ../../assets/icons/pokemon/462.png
+  url: ./features/vpc-qos.md
+
+- title: VPC互联
+  content: VPC Peering
+  image: ../../assets/icons/pokemon/chandelure.gif
+  url: ./features/vpc-peering.md
+
+- title: 多集群互联
+  content: Cluster Inter-connection
+  image: ../../assets/icons/pokemon/garchomp.gif
+  url: ./features/cluster-inter-connection.md
+
+- title: 容器网络QoS配置
+  content: Manage QoS
+  image: ../../assets/icons/pokemon/384.png
+  url: ./features/container-network-qos.md
+
+- title: LB类型Service
+  content: LoadBalancer Service
+  image: ../../assets/icons/pokemon/526.png
+  url: ./features/lb-service.md
+
+- title: EIP和SNAT配置
+  content: EIP and SNAT
+  image: ../../assets/icons/pokemon/623.png
+  url: ./features/eip-snat.md
+
+- title: 安全组配置
+  content: SecurityGroup
+  image: ../../assets/icons/pokemon/476.png
+  url: ./features/securityGroup.md
+
+- title: VIP预留配置
+  content: VIP Reservation
+  image: ../../assets/icons/pokemon/591.png
+  url: ./features/vip-reservation.md
+
+- title: DHCP配置
+  content: DHCP
+  image: ../../assets/icons/pokemon/637.png
+  url: ./features/dhcp.md

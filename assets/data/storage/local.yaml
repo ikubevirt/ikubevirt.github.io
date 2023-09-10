@@ -1,0 +1,9 @@
+- title: HostPath
+  content: HostPath
+  image: ../assets/icons/pokemon/055.png
+  url: ./local/hostPath.md
+
+- title: Local PV
+  content: Local PV
+  image: ../assets/icons/pokemon/snorlax-icon-3.jpg
+  url: ./local/localPv.md

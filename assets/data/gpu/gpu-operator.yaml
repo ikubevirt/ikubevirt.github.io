@@ -1,0 +1,9 @@
+- title: 快速开始
+  content: Get Started
+  image: ../../../assets/icons/pokemon/gyarados.png
+  url: ./get-started.md
+
+- title: 平台支持
+  content: Platform Support
+  image: ../../../assets/icons/pokemon/144.gif
+  url: ./platform-support.md

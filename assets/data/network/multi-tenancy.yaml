@@ -1,0 +1,19 @@
+- title: Kube-OVN
+  content: Kube-OVN
+  image: ../assets/images/kube-OVN-transformed.png
+  url: ./kube-ovn/index.md
+
+- title: Multus 多网卡插件
+  content: Multus CNI Plugin
+  image: ../assets/images/multus-logo-transformed.png
+  url: ./multus/index.md
+
+- title: DPDK
+  content: DPDK
+  image: ../assets/images/dpdk-logo-transformed.png
+  url: ./dpdk/index.md
+
+- title: SR-IOV
+  content: SR-IOV
+  image: ../assets/images/SR-IOV.png
+  url: ./sr-iov/index.md
