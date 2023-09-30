@@ -280,6 +280,7 @@ nav:
             - network/kube-ovn/index.md
             - 技术架构:
               - 组件介绍: network/kube-ovn/architecture/quick-learn.md
+              - Underlay流量拓扑: network/kube-ovn/architecture/underlay-traffic-topology.md
             - 特性功能:
               - 静态IP地址: network/kube-ovn/features/fixed-ip-address.md
               - 子网配置: network/kube-ovn/features/subnet.md
