@@ -2,442 +2,452 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ikubevirt.cn/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/about/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/blog/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/blog/tags/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/blog/posts/vpc-cni-k8s-cluster/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/quick-learn/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/features/hotplug-volume/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/resource/dataImportCron/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/resource/dataVolume/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/cdi/resource/objectTransfer/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/edge-computing/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/edge-computing/get-started/background/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/edge-computing/kubeEdge/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/gpu/cgpuVirt/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/gpu/gpuVirt/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/gpu/terminology/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/operators/gpuOperator/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/operators/gpuOperator/get-started/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/gpu/operators/gpuOperator/platform-support/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/dedicated-cpu-resources/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/hugepages/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/ksm/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/node-assignment/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/node-maintenance/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/node-overcommit/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/oversubscription/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/vm-mem-dump/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/tekton/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/tekton/installation/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/features/tekton/tekton-task/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/kubeVirt/quick-deploy/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/kubeVirt/quick-learn/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/operators/hyperConverged-cluster-operator/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/operators/ssp-operator/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/migrationPolicy/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachine/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineClone/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineExport/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineInstance/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineInstanceMigration/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineInstancePreset/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineInstanceReplicaSet/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineInstancetype/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachinePool/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachinePreference/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineRestore/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/resource/virtualMachineSnapshot/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/sourceCodeAnalysis/virt-handler/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/sourceCodeAnalysis/virt-launcher/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/sourceCodeAnalysis/virt-controller/virt-controller-start/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/sourceCodeAnalysis/virt-controller/vm-controller/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/kubeVirt/sourceCodeAnalysis/virt-controller/vmi-controller/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/monitor/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/dpdk/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ikubevirt.cn/network/kube-ovn/architecture/quick-learn/</loc>
+         <lastmod>2023-09-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ikubevirt.cn/network/kube-ovn/architecture/underlay-traffic-topology/</loc>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/cluster-inter-connection/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/container-network-qos/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/dhcp/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/eip-snat/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/fixed-ip-address/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/ip-pool/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/lb-service/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/securityGroup/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/subnet/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/vip-reservation/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/vpc-peering/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/vpc-qos/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/kube-ovn/features/vpc/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/multus/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/network/sr-iov/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/ceph/block-storage/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/ceph/infrastructure/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/ceph/installation/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/local/hostPath/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/local/localPv/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/backup-restore/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/cas/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/control-plane/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/data-plane/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/installation/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/node-disk-manager/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/snapshot-clone/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ikubevirt.cn/storage/openEBS/sync-replication/</loc>
-         <lastmod>2023-09-10</lastmod>
+         <lastmod>2023-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
