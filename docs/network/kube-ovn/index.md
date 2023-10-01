@@ -14,7 +14,7 @@ Kube-OVN 是一款 CNCF 旗下的企业级云原生网络编排系统，将 SDN 
 
 如果你怀念 SDN 领域丰富的网络能力却在云原生领域苦苦追寻而不得，那么 Kube-OVN 将是你的最佳选择。
 
-借助 OVS/OVN 在 SDN 领域成熟的能力，Kube-OVN 将网络虚拟化的丰富功能带入云原生领域。目前已支持[子网管理](./features/subnet.md)， [静态 IP 分配](./features/fixed-ip-address.md)，[分布式/集中式网关](./features/subnet.md/#overlay)，Underlay/Overlay 混合网络， [VPC 多租户网络](./features/vpc.md)，[跨集群互联网络](./features/cluster-inter-connection.md)，[QoS 管理](./features/vpc-qos.md)， 多网卡管理，ACL 网络控制，流量镜像，ARM 支持， Windows 支持等诸多功能。
+借助 OVS/OVN 在 SDN 领域成熟的能力，Kube-OVN 将网络虚拟化的丰富功能带入云原生领域。目前已支持[子网管理](./features/subnet.md)， [静态 IP 分配](./features/fixed-ip-address.md)，[分布式/集中式网关](./features/subnet.md/#overlay)，[Underlay/Overlay 混合网络](./features/underlay-network.md)， [VPC 多租户网络](./features/vpc.md)，[跨集群互联网络](./features/cluster-inter-connection.md)，[QoS 管理](./features/vpc-qos.md)， [多网卡管理](./features/manage-multiple-interface.md)，[ACL 网络控制](./features/subnet.md/#acl)，流量镜像，ARM 支持， Windows 支持等诸多功能。
 
 部分特性功能如下:
 
@@ -32,5 +32,6 @@ Kube-OVN 是一款 CNCF 旗下的企业级云原生网络编排系统，将 SDN 
 
 如果你对容器网络的运维心存忧虑，Kube-OVN 内置了大量的工具来帮助你简化运维操作。
 
-Kube-OVN 提供了一键安装脚本，帮助用户迅速搭建生产就绪的容器网络。同时内置的丰富的监控指标和 Grafana 面板， 可帮助用户建立完善的监控体系。强大的命令行工具可以简化用户的日常运维操作。通过和 Cilium 结合，利用 eBPF 能力用户可以 增强对网络的可观测性。 此外流量镜像的能力可以方便用户自定义流量监控，并和传统的 NPM 系统对接。
+Kube-OVN 提供了一键安装脚本，帮助用户迅速搭建生产就绪的容器网络。同时内置的丰富的监控指标和 Grafana 面板， 可帮助用户建立完善的监控体系。强大的命令行工具可以简化用户的日常运维操作。通过和 Cilium 结合，利用 eBPF 能力用户可以 增强对网络的可观测性。 此外[流量镜像](./devops/remote-port-mirroring.md)的能力可以方便用户自定义流量监控，并和传统的 NPM 系统对接。
 
+[cards cols="3" image-tags(./docs/assets/data/network/ovn-devops.yaml)]

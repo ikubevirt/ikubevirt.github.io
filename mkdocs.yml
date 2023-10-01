@@ -265,7 +265,7 @@ nav:
   - GPU:
       - gpu/index.md
       - 快速了解:
-          - 术语介绍: gpu/gpu/terminology.md
+          - GPU介绍: gpu/gpu/terminology.md
           - GPU虚拟化: gpu/gpu/gpuVirt.md
           - cGPU虚拟化: gpu/gpu/cgpuVirt.md
       - Operators:
@@ -288,13 +288,17 @@ nav:
               - VPC配置: network/kube-ovn/features/vpc.md
               - VPC QOS配置: network/kube-ovn/features/vpc-qos.md
               - VPC互联: network/kube-ovn/features/vpc-peering.md
+              - 多网卡管理: network/kube-ovn/features/manage-multiple-interface.md
               - 多集群互联: network/kube-ovn/features/cluster-inter-connection.md
               - 容器网络QoS配置: network/kube-ovn/features/container-network-qos.md
               - LB类型Service: network/kube-ovn/features/lb-service.md
               - EIP和SNAT配置: network/kube-ovn/features/eip-snat.md
               - 安全组配置: network/kube-ovn/features/securityGroup.md
+              - Underlay网络: network/kube-ovn/features/underlay-network.md
               - VIP预留配置: network/kube-ovn/features/vip-reservation.md
               - DHCP配置: network/kube-ovn/features/dhcp.md
+            - 可运维性:
+              - OVN流量镜像: network/kube-ovn/devops/remote-port-mirroring.md
           - Multus多网卡插件:
             - network/multus/index.md
           - DPDK:
