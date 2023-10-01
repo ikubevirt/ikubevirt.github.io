@@ -28,6 +28,11 @@
   image: ../../assets/icons/pokemon/chandelure.gif
   url: ./features/vpc-peering.md
 
+- title: 多网卡管理
+  content: Manage Multiple Interface
+  image: ../../assets/icons/pokemon/148.png
+  url: ./features/manage-multiple-interface.md
+
 - title: 多集群互联
   content: Cluster Inter-connection
   image: ../../assets/icons/pokemon/garchomp.gif
@@ -52,6 +57,11 @@
   content: SecurityGroup
   image: ../../assets/icons/pokemon/476.png
   url: ./features/securityGroup.md
+
+- title: Underlay网络
+  content: Underlay Network
+  image: ../../assets/icons/pokemon/226.png
+  url: ./features/underlay-network.md
 
 - title: VIP预留配置
   content: VIP Reservation

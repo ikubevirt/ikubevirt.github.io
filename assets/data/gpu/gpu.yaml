@@ -1,11 +1,11 @@
-- title: 术语介绍
+- title: GPU介绍
   content: Terminologies
-  image: ../assets/icons/pokemon/charizard.gif
+  image: ../assets/icons/pokemon/006.png
   url: ./gpu/terminology.md
 
 - title: GPU虚拟化
   content: GPU Virtualization
-  image: ../assets/icons/pokemon/gengar.jpg
+  image: ../assets/icons/pokemon/094.png
   url: ./gpu/gpuVirt.md
 
 - title: cGPU虚拟化
