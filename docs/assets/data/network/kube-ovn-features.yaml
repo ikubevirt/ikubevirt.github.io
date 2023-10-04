@@ -28,6 +28,16 @@
   image: ../../assets/icons/pokemon/chandelure.gif
   url: ./features/vpc-peering.md
 
+- title: VPC NAT策略规则
+  content: VPC NAT Policy Rule
+  image: ../../assets/icons/pokemon/229.png
+  url: ./features/vpc-nat-policy-rule.md
+
+- title: 自定义VPC负载均衡
+  content: Customize VPC Load Balancing
+  image: ../../assets/icons/pokemon/324.png
+  url: ./features/customize-vpc-load-balancing.md
+
 - title: 多网卡管理
   content: Manage Multiple Interface
   image: ../../assets/icons/pokemon/148.png
@@ -47,6 +57,11 @@
   content: LoadBalancer Service
   image: ../../assets/icons/pokemon/526.png
   url: ./features/lb-service.md
+
+- title: OVN SNAT的L3 HA支持
+  content: Support OVN SNAT L3 HA
+  image: ../../assets/icons/pokemon/038.png
+  url: ./features/ovn-l3-ha.md
 
 - title: EIP和SNAT配置
   content: EIP and SNAT

@@ -288,10 +288,13 @@ nav:
               - VPC配置: network/kube-ovn/features/vpc.md
               - VPC QOS配置: network/kube-ovn/features/vpc-qos.md
               - VPC互联: network/kube-ovn/features/vpc-peering.md
+              - VPC NAT策略规则: network/kube-ovn/features/vpc-nat-policy-rule.md
+              - 自定义VPC负载均衡: network/kube-ovn/features/customize-vpc-load-balancing.md
               - 多网卡管理: network/kube-ovn/features/manage-multiple-interface.md
               - 多集群互联: network/kube-ovn/features/cluster-inter-connection.md
               - 容器网络QoS配置: network/kube-ovn/features/container-network-qos.md
               - LB类型Service: network/kube-ovn/features/lb-service.md
+              - OVN SNAT的L3 HA支持: network/kube-ovn/features/ovn-l3-ha.md
               - EIP和SNAT配置: network/kube-ovn/features/eip-snat.md
               - 安全组配置: network/kube-ovn/features/securityGroup.md
               - Underlay网络: network/kube-ovn/features/underlay-network.md
