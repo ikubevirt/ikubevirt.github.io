@@ -310,6 +310,8 @@ nav:
             - network/sr-iov/index.md
   - 监控:
       - monitor/index.md
+  - 服务网格:
+      - mesh/index.md
   - 边缘计算:
       - edge-computing/index.md
       - 快速了解:

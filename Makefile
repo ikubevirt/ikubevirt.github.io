@@ -5,7 +5,7 @@ build:
 
 .PHONY: deploy
 deploy:
-	@python -m mkdocs gh-deploy --force -d public
+	@mkdocs gh-deploy --force -d public
 
 .PHONY: serve
 serve:

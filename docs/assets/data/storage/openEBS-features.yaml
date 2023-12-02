@@ -5,7 +5,7 @@
 
 - title: 同步复制
   content: Synchronous Replication
-  image: ../assets/icons/pokemon/banette.gif
+  image: ../assets/icons/pokemon/354.png
   url: ./openEBS/sync-replication.md
 
 - title: 快照克隆

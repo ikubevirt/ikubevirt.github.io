@@ -72,7 +72,7 @@ spec:
 
 ## StatefulSet 固定地址
 
-StatefulSet 和其他 Workload 相同可以使用 ovn.kubernetes.io/ip_pool 来指定 Pod 使用的 IP。
+StatefulSet 和其他 Workload 相同可以使用 `ovn.kubernetes.io/ip_pool` 来指定 Pod 使用的 IP。
 
 由于 StatefulSet 多用于有状态服务，对网络标示的固定有更高的要求，Kube-OVN 做了特殊的强化：
 

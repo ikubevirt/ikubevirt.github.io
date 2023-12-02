@@ -28,4 +28,4 @@ jobs:
               "neoteroi-mkdocs>=1.0.4" \
               "mike>=1.1.2" \
               "mkdocs-blogging-plugin>=2.2.11"
-      - run: python -m mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force
